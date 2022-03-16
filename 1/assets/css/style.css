@@ -1,0 +1,241 @@
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+}
+
+.title {
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 2.4rem;
+}
+
+.explanation {
+  font-size: 1.4rem;
+}
+
+#header {
+  padding: 2rem 12rem 2rem 12rem;
+  background-color: #1b1310;
+  border-bottom: .2rem solid #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}
+
+#header #header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header #header-inner #header-title {
+  font-size: 2.6rem;
+}
+
+#header #header-inner #navi-menu {
+  width: 26.9rem;
+  margin-top: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header #header-inner #navi-menu li {
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+#header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#header #hamburger-button {
+  display: none;
+}
+
+#header #hamburger-menu {
+  display: none;
+}
+
+#fv {
+  padding: 37.6rem 49.55rem 0rem 49.55rem;
+  height: 82.4rem;
+  background-image: url("../img/fv-bgi.png");
+  background-size: cover;
+  text-align: center;
+}
+
+#fv div {
+  width: 44.9rem;
+  height: 13.6rem;
+  border: .2rem solid #ffffff;
+}
+
+#fv div #fv-title {
+  margin-top: 3.5rem;
+  color: #ffffff;
+  font-size: 5rem;
+}
+
+#about {
+  padding: 10rem 20.5rem 0rem 20.5rem;
+}
+
+#about #about-subtitle {
+  margin-top: 7.2rem;
+}
+
+#about #about-exp {
+  margin-top: 4.2rem;
+}
+
+#service {
+  padding: 15rem 20.5rem 0rem 20.5rem;
+}
+
+#service #service-list {
+  margin-top: 7rem;
+}
+
+#service #service-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  margin-bottom: 5rem;
+}
+
+#service #service-list li div {
+  width: 48rem;
+}
+
+#service #service-list li div div {
+  margin-top: 4.2rem;
+}
+
+#service #service-list li img {
+  width: 48rem;
+  height: 24rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#service #service-list li:first-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#news {
+  padding: 15rem 20.5rem 0rem 20.5rem;
+}
+
+#news #news-list {
+  margin-top: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+#news #news-list li {
+  width: 32rem;
+  height: 32.3rem;
+  -webkit-box-shadow: 0rem 0rem 0.6rem rgba(27, 19, 16, 0.4);
+          box-shadow: 0rem 0rem 0.6rem rgba(27, 19, 16, 0.4);
+}
+
+#news #news-list li img {
+  width: 32rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#news #news-list li div {
+  margin: 2.6rem 3.2rem 0rem 3.4rem;
+}
+
+#contact {
+  padding: 15rem 20.5rem 0rem 20.5rem;
+}
+
+#contact #contact-title {
+  font-size: 2.4rem;
+}
+
+#contact #contact-list {
+  width: 70rem;
+  margin: 7rem auto 0rem auto;
+  list-style: none;
+}
+
+#contact #contact-list li {
+  margin-bottom: 2.2rem;
+}
+
+#contact #contact-list li .contact-list-title {
+  font-size: 1.6rem;
+}
+
+#contact #contact-list li .contact-list-box {
+  width: 70rem;
+  height: 3rem;
+  border: 0.1rem solid #141414;
+}
+
+#contact #contact-list li .big {
+  height: 17.1rem;
+}
+
+#contact #contact-submit-box {
+  margin: 5rem auto;
+  width: 23.5rem;
+  height: 5.9rem;
+  background-color: #1b1310;
+  border-radius: 5.1rem;
+  -webkit-box-shadow: 0rem 0rem 0.6rem rgba(27, 19, 16, 0.4);
+          box-shadow: 0rem 0rem 0.6rem rgba(27, 19, 16, 0.4);
+  text-align: center;
+}
+
+#contact #contact-submit-box #contact-submit {
+  margin: 1.6rem auto;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+footer {
+  padding: 2.9rem 0rem 0rem 0rem;
+  background-color: #1b1310;
+  height: 7.9rem;
+  text-align: center;
+}
+
+footer #copyright {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+/*# sourceMappingURL=style.css.map */

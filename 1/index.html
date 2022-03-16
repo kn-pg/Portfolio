@@ -1,14 +1,131 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!--basic認証-->
-  <meta name="robots" content="noindex , nofollow">
-  <title>coding_practice01</title>
-</head>
-<body>
-  
-</body>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--basic認証-->
+    <meta name="robots" content="noindex , nofollow">
+    <title>coding_practice01</title>
+    <link rel="stylesheet" href="assets/css/ress/ress.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+
+  <body>
+    <header id="header" class="container">
+      <div id="header-inner" class="inner">
+        <div id="header-title"><a href="index.html">クリ★スタ</a></div>
+        <div id="hamburger-button">
+          <i class="fas fa-bars hamburger-bars"></i>
+        </div>
+        <nav id="navi">
+          <ul id="navi-menu">
+            <li><a href="#">about</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contents</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="hamburger-menu">
+        <ul id="hamburger-navi-menu">
+          <li><a href="#">about</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contents</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section id="fv" class="container">
+        <div>
+          <h1 id="fv-title">Cresta Design.</h1>
+        </div>
+      </section>
+      <section id="about" class="container">
+        <h2 id="about-title" class="title">About</h2>
+        <h3 id="about-subtitle" class="subtitle">ミニマルで<br>洗練されたデザインを。</h3>
+        <div id="about-exp" class="explanation">
+          近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。
+        </div>
+      </section>
+      <section id="service" class="container">
+        <h2 id="service-title" class="title">Service</h2>
+        <ul id="service-list">
+          <li>
+            <div>
+              <h3 class="subtitle">リリース時のサポートで<br>サービスのブランディングを</h3>
+              <div class="explanation">弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</div>
+            </div>
+            <figure>
+              <img src="assets/img/service-image-1.png" alt="service-image-1">
+            </figure>
+          </li>
+          <li>
+            <div>
+              <h3 class="subtitle">リリース後のサポートで<br>効果を最大化させる</h3>
+              <div class="explanation">
+                弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。</div>
+            </div>
+            <figure>
+              <img src="assets/img/service-image-2.png" alt="service-image-2">
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <section id="news" class="container">
+        <h2 id="news-title" class="title">News</h2>
+        <ul id="news-list">
+          <li>
+            <figure>
+              <img src="assets/img/card-image1.png" alt="card-image1">
+            </figure>
+            <div class="exp">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</div>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/card-image2.png" alt="card-image2">
+            </figure>
+            <div class="exp">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</div>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/img/card-image3.png" alt="card-image3">
+            </figure>
+            <div class="exp">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</div>
+          </li>
+        </ul>
+      </section>
+      <section id="contact" class="container">
+        <h2 id="contact-title" class="title">お問い合わせ</h2>
+        <form>
+          <ul id="contact-list">
+            <li>
+              <div class="contact-list-title">担当者名</div>
+              <input type="text" name="n" id="username" class="contact-list-box">
+            </li>
+            <li>
+              <div class="contact-list-title">電話番号</div>
+              <input type="text" name="n" id="phonenumber" class="contact-list-box">
+            </li>
+            <li>
+              <div class="contact-list-title">メールアドレス</div>
+              <input type="text" name="n" id="mail" class="contact-list-box">
+            </li>
+            <li>
+              <div class="contact-list-title">お問い合わせ内容</div>
+              <input type="text" name="n" id="inquiry" class="contact-list-box big">
+            </li>
+          </ul>
+          <div id="contact-submit-box"><input id="contact-submit" type="submit" name="cs" value="送信"></div>
+        </form>
+      </section>
+      <footer>
+        <h4 id="copyright">&copy;crest.design all rights reserved</h4>
+      </footer>
+    </main>
+
+  </body>
+
 </html>
