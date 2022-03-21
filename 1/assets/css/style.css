@@ -3,6 +3,10 @@ html {
   overflow-x: hidden;
 }
 
+html * {
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
   width: 100%;
 }
@@ -14,21 +18,33 @@ html {
 
 .title {
   font-size: 3.6rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: 0.666666;
   text-align: center;
 }
 
 .subtitle {
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 2;
 }
 
 .explanation {
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 2.142857;
 }
 
 #header {
-  padding: 2rem 0rem;
+  width: 100%;
+  padding: 2rem 0rem 1.5rem;
   background-color: #1b1310;
-  border-bottom: .2rem solid #ffffff;
+  border-bottom: 0.2rem solid #ffffff;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,7 +53,7 @@ html {
 }
 
 #header #header-inner {
-  width: 120rem;
+  width: 83.3333333%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,7 +64,11 @@ html {
 }
 
 #header #header-inner #header-title {
-  font-size: 2.6rem;
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: 2.142857;
 }
 
 #header #header-inner #navi-menu {
@@ -81,7 +101,8 @@ html {
 }
 
 #fv {
-  height: 82.4rem;
+  padding-top: 37.6rem;
+  height: 81.4rem;
   background: url("../img/fv-bgi.png") no-repeat center 0;
   background-size: cover;
   text-align: center;
@@ -90,17 +111,20 @@ html {
 #fv div {
   width: 44.9rem;
   height: 13.6rem;
-  border: .2rem solid #ffffff;
+  border: 0.2rem solid #ffffff;
 }
 
 #fv div #fv-title {
-  margin-top: 3.5rem;
+  margin-top: 5.5rem;
   color: #ffffff;
   font-size: 5rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: 0.48;
 }
 
 #about #about-inner {
-  margin-top: 10rem;
+  margin-top: 11.5rem;
 }
 
 #about #about-subtitle {
@@ -108,15 +132,15 @@ html {
 }
 
 #about #about-exp {
-  margin-top: 4.2rem;
+  margin-top: 3.2rem;
 }
 
 #service #service-inner {
-  margin-top: 15rem;
+  margin-top: 17rem;
 }
 
 #service #service-list {
-  margin-top: 7rem;
+  margin-top: 8rem;
 }
 
 #service #service-list li {
@@ -127,15 +151,16 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
-  margin-bottom: 5rem;
+  margin-bottom: 4.7rem;
 }
 
-#service #service-list li div {
+#service #service-list li .subtitle {
+  margin-top: 1.5rem;
+}
+
+#service #service-list li .explanation {
   width: 48rem;
-}
-
-#service #service-list li div div {
-  margin-top: 4.2rem;
+  margin-top: 2.8rem;
 }
 
 #service #service-list li img {
@@ -152,12 +177,12 @@ html {
           flex-direction: row-reverse;
 }
 
-#news #new-inner {
-  margin-top: 15rem;
+#news #news-inner {
+  margin-top: 16rem;
 }
 
 #news #news-list {
-  margin-top: 7rem;
+  margin-top: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,43 +206,52 @@ html {
      object-fit: cover;
 }
 
-#news #news-list li div {
-  margin: 2.6rem 3.2rem 0rem 3.4rem;
+#news #news-list li .exp {
+  margin: 2.1rem 3.2rem 0rem 3.4rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.3rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: 1.923076;
+}
+
+#contact {
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 #contact #contact-inner {
-  margin-top: 15rem;
+  margin-top: 16rem;
+  width: 70rem;
 }
 
-#contact #contact-title {
+#contact #contact-inner #contact-title {
   font-size: 2.4rem;
 }
 
-#contact #contact-list {
-  width: 70rem;
-  margin: 7rem auto 0rem auto;
+#contact #contact-inner #contact-list {
+  margin-top: 7.2rem;
   list-style: none;
 }
 
-#contact #contact-list li {
-  margin-bottom: 2.2rem;
-}
-
-#contact #contact-list li .contact-list-title {
+#contact #contact-inner #contact-list li {
+  margin-bottom: 1.6rem;
   font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: 1.875;
 }
 
-#contact #contact-list li .contact-list-box {
+#contact #contact-inner #contact-list li .contact-list-box {
   width: 70rem;
   height: 3rem;
   border: 0.1rem solid #141414;
 }
 
-#contact #contact-list li .big {
+#contact #contact-inner #contact-list li .big {
   height: 17.1rem;
 }
 
-#contact #contact-submit-box {
+#contact #contact-inner #contact-submit-box {
   margin: 5rem auto;
   width: 23.5rem;
   height: 5.9rem;
@@ -228,13 +262,14 @@ html {
   text-align: center;
 }
 
-#contact #contact-submit-box #contact-submit {
+#contact #contact-inner #contact-submit-box #contact-submit {
   margin: 1.6rem auto;
   color: #ffffff;
   font-size: 2rem;
 }
 
 footer {
+  padding-top: 2.4rem;
   background-color: #1b1310;
   height: 7.9rem;
   text-align: center;
@@ -243,5 +278,108 @@ footer {
 footer #copyright {
   color: #ffffff;
   font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: 2.142857;
+}
+
+@media (max-width: 1235px) {
+  .inner {
+    width: 92%;
+  }
+  .subtitle {
+    margin-top: 7rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .explanation {
+    margin-top: 3rem;
+    width: 100%;
+  }
+  #header {
+    padding-top: 2rem;
+  }
+  #header #header-inner {
+    width: 92%;
+  }
+  #header #header-inner #header-title {
+    font-size: 2.6rem;
+    letter-spacing: 0em;
+    line-height: 1.307692;
+  }
+  #header #header-inner #navi {
+    display: none;
+  }
+  #header #hamburger-button {
+    display: block;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  #header #hamburger-menu {
+    width: 92%;
+    height: 66.7rem;
+    margin: 15rem auto 0rem;
+    display: block;
+    font-size: 1.6rem;
+    letter-spacing: 0.05em;
+    line-height: 1.875;
+    text-align: center;
+  }
+  #header #hamburger-menu #hamburger-navi-menu {
+    width: 6.4rem;
+    margin: 0 auto;
+    list-style: none;
+  }
+  #header #hamburger-menu #hamburger-navi-menu li {
+    margin-bottom: 4.3rem;
+  }
+  #fv {
+    padding-top: 32rem;
+    height: 66.5rem;
+  }
+  #fv div {
+    width: 30rem;
+    height: 10rem;
+  }
+  #fv div #fv-title {
+    margin-top: 3.7rem;
+    font-size: 3rem;
+    line-height: 0.8;
+  }
+  #about #about-inner {
+    margin-top: 11.5rem;
+  }
+  #about #about-exp {
+    margin-top: 2rem;
+  }
+  #service #service-inner {
+    margin-top: 16.5rem;
+  }
+  #service #service-list li {
+    display: block;
+  }
+  #service #service-list li .explanation {
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+  #service #service-list li img {
+    margin-top: 3.5rem;
+    width: 100%;
+    height: 15rem;
+  }
+  #news #news-list {
+    display: block;
+  }
+  #news #news-list li {
+    margin: 0rem auto 5rem;
+  }
+  #contact #contact-inner {
+    width: 92%;
+    margin: 15rem auto 0rem;
+  }
+  #contact #contact-inner #contact-list li .contact-list-box {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

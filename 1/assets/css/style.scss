@@ -4,40 +4,59 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
+html * {
+  font-family: "Roboto", sans-serif;
+}
 .container {
   width: 100%;
 }
-.inner{
+.inner {
   width: 1030px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 .title {
   font-size: 3.6rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: 0.666666;
   text-align: center;
 }
 .subtitle {
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 2;
 }
 .explanation {
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 2.142857;
 }
 
 #header {
-  padding: 2rem 0rem;
+  width: 100%;
+  padding: 2rem 0rem 1.5rem;
   background-color: #1b1310;
-  border-bottom:.2rem solid #ffffff;
+  border-bottom: 0.2rem solid #ffffff;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 4;
   #header-inner {
-    width: 120rem;
+    width: 83.3333333%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     #header-title {
-      font-size: 2.6rem;
+      margin-top: 0.5rem;
+      font-size: 1.4rem;
+      font-weight: normal;
+      letter-spacing: 0.05em;
+      line-height: 2.142857;
     }
     #navi-menu {
       width: 26.9rem;
@@ -63,48 +82,53 @@ html {
   }
 }
 #fv {
-  height:82.4rem;
+  padding-top: 37.6rem;
+  height: 81.4rem;
   background: url("../img/fv-bgi.png") no-repeat center 0;
   background-size: cover;
   text-align: center;
   div {
-    width:44.9rem;
-    height:13.6rem;
-    border:.2rem solid #ffffff;
+    width: 44.9rem;
+    height: 13.6rem;
+    border: 0.2rem solid #ffffff;
     #fv-title {
-      margin-top:3.5rem;
-      color:#ffffff;
+      margin-top: 5.5rem;
+      color: #ffffff;
       font-size: 5rem;
+      font-weight: normal;
+      letter-spacing: 0.05em;
+      line-height: 0.48;
     }
   }
 }
 #about {
-  #about-inner{
-    margin-top:10rem;
+  #about-inner {
+    margin-top: 11.5rem;
   }
   #about-subtitle {
     margin-top: 7.2rem;
   }
   #about-exp {
-    margin-top: 4.2rem;
+    margin-top: 3.2rem;
   }
 }
 #service {
-  #service-inner{
-    margin-top: 15rem;
+  #service-inner {
+    margin-top: 17rem;
   }
   #service-list {
-    margin-top: 7rem;
+    margin-top: 8rem;
     li {
       display: flex;
       justify-content: space-between;
       list-style: none;
-      margin-bottom: 5rem;
-      div {
+      margin-bottom: 4.7rem;
+      .subtitle {
+        margin-top: 1.5rem;
+      }
+      .explanation {
         width: 48rem;
-        div {
-          margin-top: 4.2rem;
-        }
+        margin-top: 2.8rem;
       }
       img {
         width: 48rem;
@@ -118,11 +142,11 @@ html {
   }
 }
 #news {
-  #new-inner{
-    margin-top: 15rem;
+  #news-inner {
+    margin-top: 16rem;
   }
   #news-list {
-    margin-top: 7rem;
+    margin-top: 8rem;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -135,59 +159,182 @@ html {
         height: 20rem;
         object-fit: cover;
       }
-      div {
-        margin: 2.6rem 3.2rem 0rem 3.4rem;
+      .exp {
+        margin: 2.1rem 3.2rem 0rem 3.4rem;
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 1.3rem;
+        font-weight: normal;
+        letter-spacing: 0.05em;
+        line-height: 1.923076;
       }
     }
   }
 }
 #contact {
-  #contact-inner{
-    margin-top: 15rem;
-  }
-  #contact-title {
-    font-size: 2.4rem;
-  }
-  #contact-list {
+  font-family: "Noto Sans JP", sans-serif;
+  #contact-inner {
+    margin-top: 16rem;
     width: 70rem;
-    margin: 7rem auto 0rem auto;
-    list-style: none;
-    li {
-      margin-bottom: 2.2rem;
-      .contact-list-title {
+
+    #contact-title {
+      font-size: 2.4rem;
+    }
+    #contact-list {
+      margin-top: 7.2rem;
+      list-style: none;
+      li {
+        margin-bottom: 1.6rem;
         font-size: 1.6rem;
-      }
-      .contact-list-box {
-        width: 70rem;
-        height: 3rem;
-        border: 0.1rem solid #141414;
-      }
-      .big {
-        height: 17.1rem;
+        font-weight: normal;
+        letter-spacing: 0.05em;
+        line-height: 1.875;
+        .contact-list-box {
+          width: 70rem;
+          height: 3rem;
+          border: 0.1rem solid #141414;
+        }
+        .big {
+          height: 17.1rem;
+        }
       }
     }
-  }
-  #contact-submit-box {
-    margin: 5rem auto;
-    width: 23.5rem;
-    height: 5.9rem;
-    background-color: #1b1310;
-    border-radius: 5.1rem;
-    box-shadow: 0rem 0rem 0.6rem rgba(27, 19, 16, 0.4);
-    text-align: center;
-    #contact-submit {
-      margin: 1.6rem auto;
-      color: #ffffff;
-      font-size: 2rem;
+    #contact-submit-box {
+      margin: 5rem auto;
+      width: 23.5rem;
+      height: 5.9rem;
+      background-color: #1b1310;
+      border-radius: 5.1rem;
+      box-shadow: 0rem 0rem 0.6rem rgba(27, 19, 16, 0.4);
+      text-align: center;
+      #contact-submit {
+        margin: 1.6rem auto;
+        color: #ffffff;
+        font-size: 2rem;
+      }
     }
   }
 }
 footer {
+  padding-top: 2.4rem;
   background-color: #1b1310;
   height: 7.9rem;
   text-align: center;
   #copyright {
     color: #ffffff;
     font-size: 1.4rem;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    line-height: 2.142857;
+  }
+}
+@media (max-width: 1235px) {
+  .inner {
+    width: 92%;
+  }
+  .subtitle {
+    margin-top: 7rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .explanation {
+    margin-top: 3rem;
+    width: 100%;
+  }
+  #header {
+    padding-top: 2rem;
+    #header-inner {
+      #header-title {
+        font-size: 2.6rem;
+        letter-spacing: 0em;
+        line-height: 1.307692;
+      }
+      width: 92%;
+      #navi {
+        display: none;
+      }
+    }
+    #hamburger-button {
+      display: block;
+      font-size: 3rem;
+      font-weight: 500;
+      color: #ffffff;
+    }
+    #hamburger-menu {
+      width: 92%;
+      height: 66.7rem;
+      margin: 15rem auto 0rem;
+      display: block;
+      font-size: 1.6rem;
+      letter-spacing: 0.05em;
+      line-height: 1.875;
+      text-align: center;
+      #hamburger-navi-menu {
+        width: 6.4rem;
+        margin: 0 auto;
+        list-style: none;
+        li {
+          margin-bottom: 4.3rem;
+        }
+      }
+    }
+  }
+  #fv {
+    padding-top: 32rem;
+    height: 66.5rem;
+    div {
+      width: 30rem;
+      height: 10rem;
+      #fv-title {
+        margin-top: 3.7rem;
+        font-size: 3rem;
+        line-height: 0.8;
+      }
+    }
+  }
+  #about {
+    #about-inner {
+      margin-top: 11.5rem;
+    }
+    #about-exp {
+      margin-top: 2rem;
+    }
+  }
+  #service {
+    #service-inner {
+      margin-top: 16.5rem;
+    }
+    #service-list {
+      li {
+        display: block;
+        .explanation {
+          margin-top: 1.5rem;
+          width: 100%;
+        }
+        img {
+          margin-top: 3.5rem;
+          width: 100%;
+          height: 15rem;
+        }
+      }
+    }
+  }
+  #news {
+    #news-list {
+      display: block;
+      li {
+        margin: 0rem auto 5rem;
+      }
+    }
+  }
+  #contact {
+    #contact-inner {
+      width: 92%;
+      margin: 15rem auto 0rem;
+      #contact-list li {
+        .contact-list-box {
+          width: 100%;
+        }
+      }
+    }
   }
 }
