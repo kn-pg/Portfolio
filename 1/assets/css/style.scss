@@ -2,9 +2,14 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 .container {
   width: 100%;
+}
+.inner{
+  width: 1030px;
+  margin:0 auto;
 }
 .title {
   font-size: 3.6rem;
@@ -18,7 +23,7 @@ html {
 }
 
 #header {
-  padding: 2rem 12rem 2rem 12rem;
+  padding: 2rem 0rem;
   background-color: #1b1310;
   border-bottom:.2rem solid #ffffff;
   position: fixed;
@@ -27,6 +32,8 @@ html {
   right: 0;
   z-index: 4;
   #header-inner {
+    width: 120rem;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     #header-title {
@@ -56,13 +63,11 @@ html {
   }
 }
 #fv {
-  padding: 37.6rem 49.55rem 0rem 49.55rem;
   height:82.4rem;
-  background-image: url("../img/fv-bgi.png");
+  background: url("../img/fv-bgi.png") no-repeat center 0;
   background-size: cover;
   text-align: center;
   div {
-    
     width:44.9rem;
     height:13.6rem;
     border:.2rem solid #ffffff;
@@ -74,7 +79,9 @@ html {
   }
 }
 #about {
-  padding: 10rem 20.5rem 0rem 20.5rem;
+  #about-inner{
+    margin-top:10rem;
+  }
   #about-subtitle {
     margin-top: 7.2rem;
   }
@@ -83,7 +90,9 @@ html {
   }
 }
 #service {
-  padding: 15rem 20.5rem 0rem 20.5rem;
+  #service-inner{
+    margin-top: 15rem;
+  }
   #service-list {
     margin-top: 7rem;
     li {
@@ -109,7 +118,9 @@ html {
   }
 }
 #news {
-  padding: 15rem 20.5rem 0rem 20.5rem;
+  #new-inner{
+    margin-top: 15rem;
+  }
   #news-list {
     margin-top: 7rem;
     display: flex;
@@ -131,7 +142,9 @@ html {
   }
 }
 #contact {
-  padding: 15rem 20.5rem 0rem 20.5rem;
+  #contact-inner{
+    margin-top: 15rem;
+  }
   #contact-title {
     font-size: 2.4rem;
   }
@@ -170,7 +183,6 @@ html {
   }
 }
 footer {
-  padding:2.9rem 0rem 0rem 0rem;
   background-color: #1b1310;
   height: 7.9rem;
   text-align: center;
