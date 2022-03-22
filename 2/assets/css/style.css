@@ -6,7 +6,7 @@ html a {
   text-decoration: none;
 }
 
-.sec-contaier {
+.sec-container {
   width: 100%;
 }
 
@@ -21,12 +21,32 @@ html a {
 }
 
 .sec-title {
+  position: relative;
   font-family: "Noto serif";
-  font-weight: bold italic;
+  font-weight: bold;
   font-size: 6rem;
   letter-spacing: 0.05em;
   line-height: 0.4;
   color: #282f35;
+}
+
+.sec-title::before {
+  position: absolute;
+  content: "";
+  top: 1.15rem;
+  right: -23.3rem;
+  width: 20rem;
+  height: 0.5rem;
+  background-color: #282f35;
+}
+
+.sec-bottom {
+  font-family: "Noto serif";
+  font-weight: bold;
+  font-size: 9rem;
+  line-height: 0.322222;
+  color: rgba(23, 23, 23, 0.05);
+  text-align: right;
 }
 
 #header {
@@ -38,6 +58,9 @@ html a {
   font-family: "Noto serif";
   font-weight: bold italic;
   letter-spacing: 0.05em;
+}
+
+#header a {
   color: #ffffff;
 }
 
@@ -110,6 +133,7 @@ html a {
 }
 
 #concept #concept-title {
+  width: 31.2rem;
   margin-bottom: 7rem;
 }
 
@@ -144,10 +168,99 @@ html a {
   height: 24rem;
 }
 
-#concept #concept-bottom {
-  font-size: 9rem;
-  line-height: 0.322222;
-  color: rgba(23, 23, 23, 0.05);
-  text-align: right;
+#works {
+  margin-top: 10rem;
+  padding-top: 10rem;
+  background: url("../img/works-bgi@2x.jpg") no-repeat center 0;
+  background-size: cover;
+  height: 98.6rem;
+}
+
+#works #works-outer .sec-title {
+  color: #ffffff;
+  width: 22.1rem;
+  margin-bottom: 10rem;
+}
+
+#works #works-outer .sec-title::before {
+  background-color: #ffffff;
+}
+
+#works #works-outer #works-inner #works-contents {
+  text-align: center;
+}
+
+#works #works-outer #works-inner #works-contents #works-list {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  margin-bottom: 10rem;
+}
+
+#works #works-outer #works-inner #works-contents #works-list li {
+  width: 32rem;
+  background-color: #ffffff;
+}
+
+#works #works-outer #works-inner #works-contents #works-list li img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#works #works-outer #works-inner #works-contents #works-list li .contents-exp {
+  margin: 2.5rem auto;
+  width: 28rem;
+  font-family: "Noto Serif JP";
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 1.875;
+  color: #141414;
+}
+
+#works #works-outer #works-inner #works-contents #works-button {
+  width: 23.5rem;
+  background: #f7d43f;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(0px 0px 6px #1b1310);
+          filter: drop-shadow(0px 0px 6px #1b1310);
+  margin-bottom: 10rem;
+  font-family: "Noto Serif";
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 1.875;
+  color: #171717;
+}
+
+#works #works-outer .sec-bottom {
+  font-family: "Noto Serif";
+  font-weight: bold;
+  font-size: 90px;
+  letter-spacing: 0.05em;
+  line-height: 1.6666666;
+  text-align: left;
+  color: #fff;
+  opacity: 0.1;
+}
+
+#service {
+  padding-top: 10rem;
+  height: 66rem;
+}
+
+#service #service-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */

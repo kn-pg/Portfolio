@@ -3,10 +3,11 @@
 html {
   font-size: 62.5%;
 }
+
 html a {
   text-decoration: none;
 }
-.sec-contaier {
+.sec-container {
   width: 100%;
 }
 .sec-outer {
@@ -18,14 +19,36 @@ html a {
   margin: 0 auto;
 }
 .sec-title {
+  position: relative;
   font-family: "Noto serif";
-  font-weight: bold italic;
+  font-weight: bold;
   font-size: 6rem;
   letter-spacing: 0.05em;
   line-height: 0.4;
   color: #282f35;
 }
+.sec-title::before {
+  position: absolute;
+  content: "";
+  top: 1.15rem;
+  right: -23.3rem;
+  width: 20rem;
+  height: 0.5rem;
+  background-color: #282f35;
+}
+.sec-bottom {
+  font-family: "Noto serif";
+  font-weight: bold;
+  font-size: 9rem;
+  line-height: 0.322222;
+  color: rgba(23, 23, 23, 0.05);
+  text-align: right;
+}
+
 #header {
+  a {
+    color: #ffffff;
+  }
   position: fixed;
   top: 0;
   left: 0;
@@ -34,7 +57,6 @@ html a {
   font-family: "Noto serif";
   font-weight: bold italic;
   letter-spacing: 0.05em;
-  color: #ffffff;
   #header-outer {
     margin-top: 1.9rem;
     display: flex;
@@ -43,6 +65,7 @@ html a {
       font-size: 2.6rem;
       line-height: 1.384615;
     }
+
     #navi {
       margin-top: 0.8rem;
       #navi-menu {
@@ -88,6 +111,7 @@ html a {
   font-weight: bold;
   letter-spacing: 0.05em;
   #concept-title {
+    width: 31.2rem;
     margin-bottom: 7rem;
   }
   #concept-subtitle {
@@ -111,10 +135,84 @@ html a {
     }
     margin-bottom: 7rem;
   }
-  #concept-bottom{
-    font-size: 9rem;
-    line-height: 0.322222;
-    color: rgba(23, 23, 23, 0.05);
-    text-align: right;
+}
+
+#works {
+  margin-top: 10rem;
+  padding-top: 10rem;
+  background: url("../img/works-bgi@2x.jpg") no-repeat center 0;
+  background-size: cover;
+  height: 98.6rem;
+  #works-outer {
+    .sec-title {
+      color: #ffffff;
+      width: 22.1rem;
+      margin-bottom: 10rem;
+    }
+    .sec-title::before {
+      background-color: #ffffff;
+    }
+    #works-inner {
+      #works-contents {
+        text-align: center;
+        #works-list {
+          text-align:left;
+          display: flex;
+          justify-content: space-between;
+          list-style: none;
+          margin-bottom:10rem;
+          li {
+            width: 32rem;
+            background-color: #ffffff;
+            img {
+              object-fit: cover;
+            }
+            .contents-exp {
+              margin: 2.5rem auto;
+              width: 28rem;
+              font-family: "Noto Serif JP";
+              font-weight: normal;
+              font-size: 16px;
+              letter-spacing: 0.05em;
+              line-height: 1.875;
+              color: #141414;
+            }
+          }
+        }
+        #works-button {
+          width: 23.5rem;
+          background: #f7d43f;
+          border-radius: 50%;
+          filter: drop-shadow(0px 0px 6px #1b1310);
+          margin-bottom:10rem;
+          font-family: "Noto Serif";
+          font-weight: bold;
+          font-size: 16px;
+          letter-spacing: 0.05em;
+          line-height: 1.875;
+          color: #171717;
+        }
+      }
+    }
+    .sec-bottom {
+      font-family: "Noto Serif";
+      font-weight: bold;
+      font-size: 90px;
+      letter-spacing: 0.05em;
+      line-height: 1.6666666;
+      text-align: left;
+      color: #fff;
+      opacity: 0.1;
+    }
+  }
+}
+
+#service {
+  padding-top: 10rem;
+  height: 66rem;
+  #service-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
   }
 }
