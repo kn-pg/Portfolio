@@ -1,0 +1,153 @@
+html {
+  font-size: 62.5%;
+}
+
+html a {
+  text-decoration: none;
+}
+
+.sec-contaier {
+  width: 100%;
+}
+
+.sec-outer {
+  width: 83.333333%;
+  margin: 0 auto;
+}
+
+.sec-inner {
+  width: 91.666666%;
+  margin: 0 auto;
+}
+
+.sec-title {
+  font-family: "Noto serif";
+  font-weight: bold italic;
+  font-size: 6rem;
+  letter-spacing: 0.05em;
+  line-height: 0.4;
+  color: #282f35;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  font-family: "Noto serif";
+  font-weight: bold italic;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+#header #header-outer {
+  margin-top: 1.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header #header-outer #header-title {
+  font-size: 2.6rem;
+  line-height: 1.384615;
+}
+
+#header #header-outer #navi {
+  margin-top: 0.8rem;
+}
+
+#header #header-outer #navi #navi-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  font-size: 1.6rem;
+  line-height: 1.375;
+}
+
+#header #header-outer #navi #navi-menu li {
+  margin-left: 3rem;
+}
+
+#fv {
+  background: url("../img/fv-bgi_01@2x.jpg") no-repeat center 0;
+  background-size: cover;
+  height: 75.2rem;
+  font-family: "Noto serif";
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+#fv #fv-outer {
+  padding-top: 40.9rem;
+}
+
+#fv #fv-outer #fv-title {
+  font-size: 7rem;
+  line-height: 0.714285;
+}
+
+#fv #fv-outer #fv-subtitle {
+  margin-top: 2rem;
+  margin-left: 4rem;
+  font-size: 4rem;
+  line-height: 1.25;
+}
+
+#concept {
+  padding-top: 10rem;
+  font-family: "Noto serif";
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+#concept #concept-title {
+  margin-bottom: 7rem;
+}
+
+#concept #concept-subtitle {
+  margin-bottom: 6rem;
+  font-size: 3rem;
+  line-height: 1.666666;
+  text-align: center;
+}
+
+#concept #concept-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 7rem;
+}
+
+#concept #concept-contents #concept-exp {
+  width: 44rem;
+  font-size: 1.6rem;
+  line-height: 1.875;
+}
+
+#concept #concept-contents #concept-exp img {
+  width: 44rem;
+  height: 24rem;
+}
+
+#concept #concept-bottom {
+  font-size: 9rem;
+  line-height: 0.322222;
+  color: rgba(23, 23, 23, 0.05);
+  text-align: right;
+}
+/*# sourceMappingURL=style.css.map */
