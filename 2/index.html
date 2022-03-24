@@ -4,14 +4,21 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex , nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>cresta_coding_practice02</title>
     <link rel="stylesheet" href="assets/css/ress/ress.min.css">
+    <link rel="stylesheet" href="assets/css/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet">
+      
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
   <body>
-    <header id="header" class="sec-container">
+    <header id="header">
       <div id="header-outer" class="sec-outer">
         <h1 id="header-title"><a href="index.html">Cresta Design</a></h1>
         <div id="hamburger-button">
@@ -37,16 +44,22 @@
       </div>
     </header>
     <main>
-      <section id="fv" class="sec-container">
-        <div id="fv-outer" class="sec-outer">
+
+      <section id="fv">
+        <div id="fv-outer">
           <h2 id="fv-title">Design for Smile.</h2>
           <h3 id="fv-subtitle">快適なオフィスをデザインする</h3>
         </div>
+        <div id="fv-slick">
+          <div><img src="./assets/img/fv-bgi_01@2x.jpg" alt=""></div>
+          <div><img src="./assets/img/fv-bgi_02@2x.jpg" alt=""></div>
+          <div><img src="./assets/img/fv-bgi_03@2x.jpg" alt=""></div>
+        </div>
       </section>
       <section id="concept" class="sec-container">
-        <div id="concept-outer" class="sec-outer">
-          <h4 id="concept-title" class="sec-title">CONCEPT</h4>
-          <div id="concept-inner" class="sec-inner">
+        <div class="sec-outer">
+          <h4 class="sec-title">CONCEPT</h4>
+          <div class="sec-inner">
             <h5 id="concept-subtitle">“働きたくなる空間”をデザインすることで<br>人々を幸せにする。</h5>
             <div id="concept-contents">
               <div id="concept-exp" class="contents-exp">
@@ -59,10 +72,11 @@
           <div id="concept-bottom" class="sec-bottom">Our Concept</div>
         </div>
       </section>
+      
       <section id="works" class="sec-container">
-        <div id="works-outer" class="sec-outer">
-          <h4 id="works-title" class="sec-title">Works</h4>
-          <div id="works-inner" class="sec-inner">
+        <div class="sec-outer">
+          <h4 class="sec-title">Works</h4>
+          <div class="sec-inner">
             <div id="works-contents">
               <ul id="works-list">
                 <li>
@@ -78,58 +92,67 @@
                   <div class="contents-exp">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</div>
                 </li>
               </ul>
-              <button type="button" onclick="location.href='https://techacademy.jp'" id="works-button">View more</button>
+              <button type="button" onclick="location.href='https://techacademy.jp'" id="works-button"
+                class="sec-button">View more</button>
             </div>
           </div>
           <div id="works-bottom" class="sec-bottom">Our Works</div>
         </div>
       </section>
-      <section id="service">
-        <div id="service-outer" class="sec-outer">
-          <div id="service-inner" class="sec-inner">
-            <h4 id="service-title" class="sec-title">Service</h4>
+      <section id="service" class="sec-container">
+        <div class="sec-outer">
+          <div class="sec-inner">
+            <h4 class="sec-title">Service</h4>
           </div>
-          <div id="service-contents">
-            <ul id="service-list">
-              <li>
+        </div>
+        <div id="service-contents">
+          <ul id="service-list">
+            <li>
+              <a href="#">
                 <img src="./assets/img/service-img01@2x.jpg" alt="">
-                <div class="contents-exp">Hearing</div>
-              </li>
-              <li>
+                <div>Hearing</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
                 <img src="./assets/img/service-img02@2x.jpg" alt="">
-                <div class="contents-exp">Planning</div>
-              </li>
-              <li>
+                <div>Planning</div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
                 <img src="./assets/img/sevice-img03@2x.jpg" alt="">
-                <div class="contents-exp">Direction</div>
-              </li>
-            </ul>
-          </div>
+                <div>Direction</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sec-outer">
           <div id="service-bottom" class="sec-bottom">Our Service</div>
         </div>
       </section>
-      <section id="contact">
-        <div id="contact-outer" class="sec-outer">
-          <h4 id="contact-title" class="sec-title">Contact</h4>
-          <div id="contact-inner" class="sec-inner">
+      <section id="contact" class="sec-container">
+        <div class="sec-outer">
+          <h4 class="sec-title">Contact</h4>
+          <div class="sec-inner">
             <div id="contact-contents">
               <div id="contact-text">お気軽にご相談ください。</div>
-              <button type="button" onclick="location.href='https://techacademy.jp'" id="Contact-button">Contact</button>
+              <button type="button" onclick="location.href='https://techacademy.jp'" id="contact-button"
+                class="sec-button">Contact</button>
             </div>
           </div>
-          
-          <div id="contact-bottom" class="sec-bottom">Contact us</div>
+          <div class="sec-bottom">Contact us</div>
         </div>
       </section>
     </main>
-    <!--
-      <footer>
-
+    <footer>
+      <div id="footer-text">&copy;cresta.design all rights reserved</div>
     </footer>
-    -->
-    
+
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/jquery-migrate-3.3.2.min.js"></script>
+    <script src="./assets/css/slick/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/c355afeef2.js" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 
