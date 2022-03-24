@@ -374,31 +374,31 @@ footer #footer-text {
   /* ---------------- */
   /* header
   /* ---------------- */
-  header #header-outer {
+  #header .sec-outer {
     max-width: 340px;
   }
-  header #header-outer #hamburger-button {
+  #header .sec-outer #hamburger-button {
     width: 30px;
     display: block;
     color: #fff;
     font-size: 3rem;
     font-weight: 500;
   }
-  header #navi {
+  #header #navi {
     display: none;
   }
-  header #hamburger-menu {
+  #header #hamburger-menu {
     text-align: center;
     padding: 32.635% 0;
     margin: 0 auto;
     display: block;
   }
-  header #hamburger-menu #hamburger-navi-menu {
+  #header #hamburger-menu #hamburger-navi-menu {
     width: 6.4rem;
     margin: 0 auto;
     list-style: none;
   }
-  header #hamburger-menu #hamburger-navi-menu li {
+  #header #hamburger-menu #hamburger-navi-menu li {
     margin-bottom: 4.3rem;
   }
   header.tg-color {
