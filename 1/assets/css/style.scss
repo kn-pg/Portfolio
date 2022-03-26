@@ -11,7 +11,7 @@ html * {
   width: 100%;
 }
 .inner {
-  width: 1030px;
+  max-width: 1030px;
   margin: 0 auto;
 }
 .title {
@@ -121,21 +121,27 @@ html * {
     li {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       list-style: none;
       margin-bottom: 4.7rem;
-      .subtitle {
-        margin-top: 1.5rem;
+      .text {
+        width: 46.6%;
+        .subtitle {
+          margin-top: 1.5rem;
+        }
+        .explanation {
+          margin-top: 2.8rem;
+        }
       }
-      .explanation {
-        width: 48rem;
-        margin-top: 2.8rem;
-      }
-      img {
-        width: 48rem;
-        height: 24rem;
-        object-fit: cover;
+      figure {
+        width: 46.60%;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
       }
     }
+
     li:first-child {
       flex-direction: row-reverse;
     }
@@ -151,11 +157,11 @@ html * {
     justify-content: space-between;
     list-style: none;
     li {
-      width: 32rem;
+      width: 31.06796%;
       height: 32.3rem;
       box-shadow: 0rem 0rem 0.6rem rgba(27, 19, 16, 0.4);
       img {
-        width: 32rem;
+        width: 100%;
         height: 20rem;
         object-fit: cover;
       }
@@ -174,8 +180,7 @@ html * {
   font-family: "Noto Sans JP", sans-serif;
   #contact-inner {
     margin-top: 16rem;
-    width: 70rem;
-
+    max-width: 700px;
     #contact-title {
       font-size: 2.4rem;
     }
@@ -189,7 +194,7 @@ html * {
         letter-spacing: 0.05em;
         line-height: 1.875;
         .contact-list-box {
-          width: 70rem;
+          width: 100%;
           height: 3rem;
           border: 0.1rem solid #141414;
         }
@@ -227,6 +232,8 @@ footer {
     line-height: 2.142857;
   }
 }
+
+/*
 @media (max-width: 1235px) {
   .inner {
     width: 92%;
@@ -338,3 +345,4 @@ footer {
     }
   }
 }
+*/
