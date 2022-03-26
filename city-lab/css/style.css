@@ -6,6 +6,10 @@
 .container{
   width:100%;
 }
+.inner{
+  max-width: 1080px;
+  margin: 0 auto;
+}
 a:link, a:visited, a:hover, a:active{
   text-decoration: none;
 }
@@ -26,14 +30,14 @@ a:link, a:visited, a:hover, a:active{
 #header-logo{
   display: flex;
   justify-content: space-between;
-  width:calc((var(--vw))/1600*120);
-  margin-left: calc((var(--vw))/1600*33);
+  width:120px;
+  margin-left: 33px;
 
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: calc((var(--vw))/1600*28);
-  letter-spacing:calc(10em/1000);
-  line-height:calc(28/28);
+  font-size: 28px;
+  letter-spacing:0.001em;
+  line-height:1;
 }
 #header-logo-blue{
   color:#019bdf;
@@ -41,23 +45,21 @@ a:link, a:visited, a:hover, a:active{
 #header-logo-lightblue{
   color:#30d0ed;
 }
-#navi{
-  width: calc((var(--vw))/1600*840);
-}
 #navi-menu{
   display: flex;
   justify-content: space-between;
-  align-items: center;
   list-style: none;
 }
 #navi-menu li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height:80px;
   color:#333333;
 }
 #navi-menu li:last-child{
-  width:calc((var(--vw))/1600*200);
-  height:calc((var(--vw))/1600*80);
-  padding-top: calc((var(--vw))/1600*30);
-  padding-left:calc((var(--vw))/1600*50);
+  width:200px;
   background-color: #30d0ed;
   color:#ffffff;
 }
@@ -71,44 +73,35 @@ a:link, a:visited, a:hover, a:active{
 }
 /*main-visual*/
 #main-visual{
-  background-image: url("../assets/img/mein-visual.png");
-  height:calc((var(--vw))/1600*670);
+  padding-top:230px;
+  background: url("../assets/img/mein-visual.png") no-repeat center 0;
+  height:670px;
   background-size: cover;
   text-align: center;
-  position: relative;
 }
 #main-visual-title{
-  position: absolute;
   text-align: center;
-  top: calc((var(--vw))/1600*223);
-  left: calc((var(--vw))/1600*540);
-
   font-family: "Cormorant Garamond";
   font-weight: normal;
   color:#ffffff;
-  font-size: calc((var(--vw))/1600*140);
-  letter-spacing:calc(25em/1000);
-  line-height:calc(115/140);
+  font-size: 140px;
+  letter-spacing:0.025em;
+  line-height:0.82142;
+  margin-bottom: 25px;
 }
 #main-visual-subtitle{
-  position: absolute;
   text-align: center;
-  top: calc((var(--vw))/1600*515);
-  left: calc((var(--vw))/1600*570);
-
   font-family: "Noto Sans JP";
   font-weight: normal;
   color:#ffffff;
-  font-size: calc((var(--vw))/1600*25);
-  letter-spacing:calc(100em/1000);
-  line-height:calc(36/25);
+  font-size: 25px;
+  letter-spacing:0.1em;
+  line-height:1.44;
 }
 /*news*/
 #news{
   background-color: #EDFCFF;
-  height: calc((var(--vw))/1600*235);
-  
-  padding:calc((var(--vw))/1600*57) calc((var(--vw))/1600*200) 0vw calc((var(--vw))/1600*200);
+  padding: 60px 0px;
 }
 #news-inner{
   display: flex;
@@ -118,80 +111,80 @@ a:link, a:visited, a:hover, a:active{
   color:#019bdf;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: calc((var(--vw))/1600*40);
-  letter-spacing:calc(25em/1000);
-  line-height:calc(40/40);
+  font-size: 40px;
+  letter-spacing:0.025em;
+  line-height:1;
 }
 #news-link-list{
   font-family: "Noto Sans JP";
   font-weight: normal;
   color:#333333;
-  font-size: calc((var(--vw))/1600*12);
-  letter-spacing:calc(75em/1000);
-  line-height:calc(24/12);
+  font-size: 12px;
+  letter-spacing:0.075em;
+  line-height:2;
 }
 #news-link-list a{
   text-decoration: none;
 }
 #news-toplist li{
   display: flex;
-  width:calc((var(--vw))/1600*1050);
-  padding-bottom:calc((var(--vw))/1600*14.3);
-  margin-bottom:calc((var(--vw))/1600*10.7);
-  border-bottom:calc((var(--vw))/1600*1) solid #30d0ed;
+  max-width:1048px;
+  padding-bottom:14.3px;
+  margin-bottom:10.7px;
+  border-bottom:1px solid #30d0ed;
 
   font-family: "Noto Sans JP";
   font-weight: normal;
   color:#333333;
 }
 .date{
-  font-size: calc((var(--vw))/1600*13);
-  letter-spacing:calc(75em/1000);
-  line-height:calc(24/13);
+  font-size: 13px;
+  letter-spacing:0.075em;
+  line-height:1.846153;
 }
 .field{
   display: table;
   text-align: center;
-  margin-right:calc((var(--vw))/1600*34);
-  margin-left:calc((var(--vw))/1600*29);
-  width: calc((var(--vw))/1600*80);
-  height: calc((var(--vw))/1600*18);
+  margin-right:34px;
+  margin-left:29px;
+  width: 80px;
+  height: 18px;
   background-color: #019bdf;
   color:#ffffff;
-  font-size: calc((var(--vw))/1600*10);
-  letter-spacing:calc(75em/1000);
-  line-height:calc(24/10);
+  font-size: 10px;
+  letter-spacing:0.075em;
+  line-height:2.4;
 }
 .field div{
   display: table-cell;
   vertical-align: middle;
 }
 .contains{
-  font-size: calc((var(--vw))/1600*13);
-  letter-spacing:calc(75em/1000);
-  line-height:calc(24/13);
+  font-size: 13px;
+  letter-spacing:0.075em;
+  line-height:1.846153;
 }
 /*service*/
 #service{
   text-align: center;
-  padding:calc((var(--vw))/1600*79) calc((var(--vw))/1600*200) 0vw calc((var(--vw))/1600*200);
+  padding:79px 0 0;
 }
 #service-title{
   color:#019bdf;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: calc((var(--vw))/1600*40);
-  letter-spacing:calc(25em/1000);
-  line-height:calc(40/40);
+  font-size: 40px;
+  letter-spacing:0.25em;
+  line-height:1;
 }
 #service-subtitle{
-  margin-bottom: calc((var(--vw))/1600*20);
+  margin-bottom: 20px;
   color:#019bdf;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: calc((var(--vw))/1600*14);
-  letter-spacing:calc(75em/1000);
-  line-height:calc(24/14);
+  font-size: 14px;
+  letter-spacing: 0.75em;
+  line-height: 1.714285;
 }
 #service-figlist{
   display: flex;
@@ -199,15 +192,15 @@ a:link, a:visited, a:hover, a:active{
   list-style: none;
 }
 .service-fig{
-  width: calc((var(--vw))/1600*380);
-  height: calc((var(--vw))/1600*220);
+  width: 100%;
+  height: 220px;
   object-fit: cover;
 }
 #service-figlist li figure figcaption{
   font-family: "Noto Sans JP";
   font-weight: normal;
   color:#333333;
-  font-size: calc((var(--vw))/1600*13);
-  letter-spacing:calc(75em/1000);
-  line-height:calc(24/13);
+  font-size: 13px;
+  letter-spacing:0.75em;
+  line-height:1.714285;
 }
