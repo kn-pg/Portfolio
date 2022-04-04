@@ -1,0 +1,189 @@
+html {
+  font-size: 62.5%;
+}
+
+html a {
+  text-decoration: none;
+}
+
+html img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+body {
+  color: #171717;
+  font-family: "Montserrat", sans-serif, "Noto Sans JP", sans-serif;
+}
+
+/* ---------------- */
+/* class
+/* ---------------- */
+.container {
+  width: 100%;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sec-title {
+  margin-bottom: 30px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 2.125;
+  line-height: 1.194;
+}
+
+.sec-button {
+  width: 160px;
+  line-height: 36px;
+  background: #000000;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+
+/* ---------------- */
+/* header
+/* ---------------- */
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  color: #fff;
+}
+
+#header .inner {
+  padding: 30px 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header .inner #hamburger-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ---------------- */
+/* fv
+/* ---------------- */
+#fv {
+  height: 740px;
+  position: relative;
+  background-color: #222222;
+  color: #fff;
+}
+
+#fv #fv-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1100px;
+}
+
+#fv #fv-text {
+  position: absolute;
+  top: 157px;
+  left: 954px;
+}
+
+#fv #fv-text .sec-subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 0.85;
+}
+
+#fv #fv-text .sec-title {
+  font-size: 7.2rem;
+  font-weight: bold;
+  line-height: 1.194;
+}
+
+/* ---------------- */
+/* about us
+/* ---------------- */
+#about .inner {
+  padding: 110px 50px;
+  background: url("../img/about-img.png") no-repeat center 0;
+  background-size: cover;
+}
+
+#about .box {
+  width: 590px;
+  padding: 50px 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+#about .box .sec-title {
+  color: #333333;
+}
+
+#about .box .box-text {
+  margin: 0 auto 30px;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 2;
+}
+
+/* ---------------- */
+/* works & culture
+/* ---------------- */
+#worksculture-overlay {
+  background-color: #F0F0F0;
+}
+
+#worksculture-overlay #worksculture-innerlay {
+  width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#worksculture-overlay #worksculture-innerlay #works,
+#worksculture-overlay #worksculture-innerlay #culture {
+  width: 520px;
+}
+
+#worksculture-overlay #worksculture-innerlay #works img,
+#worksculture-overlay #worksculture-innerlay #culture img {
+  margin-bottom: 27px;
+}
+
+#worksculture-overlay #worksculture-innerlay #works .img-exp,
+#worksculture-overlay #worksculture-innerlay #culture .img-exp {
+  margin-bottom: 28px;
+}
+
+/* ---------------- */
+/* topics
+/* ---------------- */
+#topics .inner {
+  text-align: left;
+}
+
+#topics #topics-list {
+  list-style: none;
+  width: 700px;
+}
+/*# sourceMappingURL=style.css.map */
