@@ -291,8 +291,8 @@ body {
   margin-bottom: 10px;
 }
 
-#contact .inner form .recaptcha-item {
-  text-align: center;
+#contact .inner form .g-recaptcha div {
+  margin: 0 auto 10px;
 }
 
 #contact .inner form .button {
