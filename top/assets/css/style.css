@@ -1,0 +1,410 @@
+html {
+  font-size: 62.5%;
+}
+
+html a {
+  text-decoration: none;
+}
+
+html img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+html ul {
+  list-style: none;
+}
+
+body {
+  color: #171717;
+  font-family: "Roboto", sans-serif, "Noto Sans JP", sans-serif;
+}
+
+/* ---------------- */
+/* class
+/* ---------------- */
+/*link:hover effect*/
+.off-page:hover,
+.in-page:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  color: white;
+}
+
+.container {
+  width: 100%;
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 55px 20px;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.text {
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+}
+
+.list-title {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.list-text {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+/* ---------------- */
+/* header
+/* ---------------- */
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  background-color: #fff;
+}
+
+#header a {
+  font-size: 1.2rem;
+  color: black;
+}
+
+#header .inner {
+  background-color: #fff;
+  margin: 0px auto;
+  padding: 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .inner #navi-menu {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header .inner #hamburger-button {
+  display: none;
+}
+
+/* ---------------- */
+/* fv
+/* ---------------- */
+#fv {
+  position: relative;
+  color: #fff;
+}
+
+#fv .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#fv .inner .title {
+  font-size: 4.8rem;
+}
+
+#fv #fv-slick {
+  z-index: -1;
+}
+
+#fv #fv-slick img {
+  max-height: 900px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* ---------------- */
+/* about
+/* ---------------- */
+#about .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .inner img {
+  width: 375px;
+  height: 375px;
+}
+
+#about .inner #about-text {
+  max-width: 375px;
+  margin: 0px 20px;
+}
+
+#about .inner #about-text #about-list li {
+  margin-top: 10px;
+}
+
+#about .inner #about-text #about-list li a {
+  color: #171717;
+  margin-right: 10px;
+}
+
+/* ---------------- */
+/* skills
+/* ---------------- */
+#skills {
+  background-color: rgba(23, 23, 23, 0.05);
+}
+
+#skills .title {
+  text-align: center;
+}
+
+#skills #skills-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+#skills #skills-list li {
+  width: 300px;
+  margin: 0 10px;
+}
+
+#skills #skills-list li i {
+  margin-bottom: 10px;
+}
+
+#skills #skills-list li .list-text {
+  max-width: 280px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+/* ---------------- */
+/* works
+/* ---------------- */
+#works .inner .title {
+  text-align: center;
+}
+
+#works .inner #works-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+#works .inner #works-list li {
+  width: 450px;
+  margin: 0 10px;
+  background-color: rgba(23, 23, 23, 0.05);
+  border: 1px solid rgba(23, 23, 23, 0.05);
+  border-radius: 10px;
+}
+
+#works .inner #works-list li a {
+  color: black;
+}
+
+#works .inner #works-list li .list-text {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+/* ---------------- */
+/* contact
+/* ---------------- */
+#contact {
+  background-color: rgba(23, 23, 23, 0.05);
+}
+
+#contact .inner .title {
+  text-align: center;
+}
+
+#contact .inner .text {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+#contact .inner form {
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 1.4rem;
+}
+
+#contact .inner form .contact-list-box {
+  background-color: #fff;
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#contact .inner form .button {
+  margin: 0 auto;
+  text-align: center;
+  width: 120px;
+  line-height: 40px;
+  background: rgba(7, 85, 97, 0.5);
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 6px #1b1310;
+          box-shadow: 0px 0px 6px #1b1310;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+
+/* ---------------- */
+/* footer
+/* ---------------- */
+footer {
+  background-color: rgba(23, 23, 23, 0.05);
+  padding: 30px 0px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  /* ---------------- */
+  /* header
+  /* ---------------- */
+  #header {
+    background-color: transparent;
+  }
+  #header .inner #navi-menu {
+    display: none;
+  }
+  #header .inner #hamburger-button {
+    display: block;
+  }
+  #header #hamburger-menu {
+    width: 200px;
+    margin-left: auto;
+    text-align: left;
+    display: block;
+  }
+  #header #hamburger-menu #hamburger-navi-menu {
+    list-style: none;
+  }
+  #header #hamburger-menu #hamburger-navi-menu li {
+    margin: 1px auto;
+    padding-left: 10px;
+    line-height: 30px;
+    background-color: #fff;
+  }
+  /* ---------------- */
+  /* fv
+  /* ---------------- */
+  #fv .inner {
+    margin: 50px auto;
+    padding: 0 0;
+  }
+  #fv .inner .title {
+    font-size: 3rem;
+  }
+  /* ---------------- */
+  /* about
+  /* ---------------- */
+  #about .inner {
+    display: block;
+  }
+  #about .inner .title {
+    display: none;
+  }
+  #about .inner .about-img {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #about .inner .about-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  #about .inner #about-text {
+    max-width: 450px;
+    margin: 0px auto;
+  }
+  #about .inner #about-text .title {
+    text-align: center;
+  }
+  /* ---------------- */
+  /* skills
+/* ---------------- */
+  #skills #skills-list {
+    display: block;
+  }
+  #skills #skills-list li {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #skills #skills-list li .list-text {
+    max-width: 450px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  /* ---------------- */
+  /* works
+/* ---------------- */
+  #works .inner #works-list {
+    display: block;
+  }
+  #works .inner #works-list li {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+  #works .inner #works-list li .list-text {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=style.css.map */

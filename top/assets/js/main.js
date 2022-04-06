@@ -1,27 +1,5 @@
 /* globals $*/
 
-$(window.onresize = (function () {
-  let vw = document.body.clientWidth;
-  if (vw > 767) {
-    $(window.onscroll = (function () {
-      let y = window.pageYOffset;
-      if (y > 752) {
-        $('header').addClass('sc-color');;
-      } else {
-        $('header').removeClass('sc-color');
-      }
-    }))
-  } else {
-    $(window.onscroll = (function () {
-      let y = window.pageYOffset;
-      if (y > 599) {
-        $('header').addClass('sc-color');
-      } else {
-        $('header').removeClass('sc-color');
-      }
-    }))
-  }
-}));
 //hamburger
 $('#hamburger-menu').hide();
 $('.fa-times').hide();
@@ -29,13 +7,26 @@ $('#hamburger-button').click(function () {
   var content = $(this).parents().find('#hamburger-menu');
   content.slideToggle();
   $('.hamburger-bars, .fa-times').toggle();
-  $('header').toggleClass('tg-color');
-  $('body').toggleClass('noscroll');
 });
 
 $('#fv-slick').slick({
   autoplay: true,
-  autoplaySpeed: 3500,
+  autoplaySpeed: 5000,
   dots: false,
   arrows: false,
+});
+//off-page link
+$('.off-page').click(function () {
+  let href = $(this).children('a').attr('href');
+  location.href = href;
+  //window.open(href);
+});
+//in-page link
+$('.in-page').click(function () {
+  var speed = 500; // スクロール速度(ミリ秒)
+  let href = $(this).children('a').attr('href');
+  var target = $(href == "#" || href == "" ? 'html' : href);
+  var position = target.offset().top;
+  $('html').animate({ scrollTop: position }, speed, 'swing');
+  return false;
 });
