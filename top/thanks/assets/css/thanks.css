@@ -1,0 +1,85 @@
+html {
+  font-size: 62.5%;
+}
+
+html a {
+  text-decoration: none;
+}
+
+body {
+  color: #171717;
+  font-family: "Roboto", sans-serif, "Noto Sans JP", sans-serif;
+}
+
+/* ---------------- */
+/* class
+/* ---------------- */
+.container {
+  width: 100%;
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 55px 20px;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/* ---------------- */
+/* thanks
+/* ---------------- */
+#thanks {
+  text-align: center;
+}
+
+#thanks .inner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#thanks .inner .title {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+#thanks .inner a {
+  color: #171717;
+}
+
+#thanks br {
+  display: none;
+}
+
+/* ---------------- */
+/* footer
+/* ---------------- */
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(23, 23, 23, 0.05);
+  padding: 30px 0px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #thanks br {
+    display: block;
+  }
+}
+/*# sourceMappingURL=thanks.css.map */

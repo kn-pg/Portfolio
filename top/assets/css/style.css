@@ -291,6 +291,10 @@ body {
   margin-bottom: 10px;
 }
 
+#contact .inner form .recaptcha-item {
+  text-align: center;
+}
+
 #contact .inner form .button {
   margin: 0 auto;
   text-align: center;
