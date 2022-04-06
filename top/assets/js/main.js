@@ -30,3 +30,42 @@ $('.in-page').click(function () {
   $('html').animate({ scrollTop: position }, speed, 'swing');
   return false;
 });
+window.onload = function(){
+  /*各画面オブジェクト*/
+  const contact_submit= document.getElementById('contact-submit');
+  const username = document.getElementById('username');
+  const email = document.getElementById('mail');
+  const subject = document.getElementById('subject');
+  const messages = document.getElementById('messages');
+
+  contact_submit.addEventListener('click', function(e) {
+      let message_ne = [];
+      let message = [];
+      if(username.value == ""){
+        message_ne.push("お名前");
+      }
+      if (email.value=="") {
+        message_ne.push("メールアドレス");
+      }
+      else if (!(/^[a-zA-Z0-9_.+-]+@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$/).test(email.value)) {
+        message.push("メールアドレスを○○○@example.comのような形で入力してください。\n");
+      }
+      if (subject.value=="") {
+        message_ne.push("件名");
+      }
+      if (messages.value=="") {
+        message_ne.push("内容");
+      }
+      if(message_ne.length > 0){
+        message_ne = message_ne+"が未入力です。入力してください。\n";
+      }
+      if(message_ne.length > 0 || message.length > 0){
+        alert(message_ne + message.join(''));
+        return;
+      }
+      else{
+        alert('入力チェックOK');
+      }
+      
+  });
+};

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+#thanks {
+  text-align: center;
+  .inner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .title {
+      white-space: nowrap;
+      display: inline-block;
+    }
+    a{
+      color:#171717;
+    }
+  }
+  br {
+    display: none;
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  #thanks {
+    br {
+      display: block;
+    }
+  }
+}
