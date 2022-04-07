@@ -1,18 +1,33 @@
 @charset "UTF-8";
-
+//resposive settings
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
 }
-html * {
+html a {
+  text-decoration: none;
+}
+html img {
+  width: 100%;
+  vertical-align: bottom;
+}
+html ul {
+  list-style: none;
+}
+
+body {
   font-family: "Roboto", sans-serif;
 }
+
+/* ---------------- */
+/* class
+/* ---------------- */
 .container {
   width: 100%;
 }
 .inner {
   max-width: 1030px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .title {
   font-size: 3.6rem;
@@ -35,7 +50,9 @@ html * {
   letter-spacing: 0.05em;
   line-height: 2.142857;
 }
-
+/* ---------------- */
+/* header
+/* ---------------- */
 #header {
   width: 100%;
   padding: 2rem 0rem 1.5rem;
@@ -81,6 +98,9 @@ html * {
     display: none;
   }
 }
+/* ---------------- */
+/* fv
+/* ---------------- */
 #fv {
   padding-top: 37.6rem;
   height: 81.4rem;
@@ -88,19 +108,24 @@ html * {
   background-size: cover;
   text-align: center;
   div {
-    width: 44.9rem;
-    height: 13.6rem;
+    max-width: 44.9rem;
     border: 0.2rem solid #ffffff;
     #fv-title {
-      margin-top: 5.5rem;
+      margin: 5.5rem auto;
       color: #ffffff;
       font-size: 5rem;
       font-weight: normal;
       letter-spacing: 0.05em;
-      line-height: 0.48;
+      line-height: 1.2;
+      br {
+        display: none;
+      }
     }
   }
 }
+/* ---------------- */
+/* about
+/* ---------------- */
 #about {
   #about-inner {
     margin-top: 11.5rem;
@@ -112,6 +137,9 @@ html * {
     margin-top: 3.2rem;
   }
 }
+/* ---------------- */
+/* service
+/* ---------------- */
 #service {
   #service-inner {
     margin-top: 17rem;
@@ -134,7 +162,7 @@ html * {
         }
       }
       figure {
-        width: 46.60%;
+        width: 46.6%;
         img {
           width: 100%;
           object-fit: cover;
@@ -147,6 +175,9 @@ html * {
     }
   }
 }
+/* ---------------- */
+/* news
+/* ---------------- */
 #news {
   #news-inner {
     margin-top: 16rem;
@@ -158,7 +189,6 @@ html * {
     list-style: none;
     li {
       width: 31.06796%;
-      height: 32.3rem;
       box-shadow: 0rem 0rem 0.6rem rgba(27, 19, 16, 0.4);
       img {
         width: 100%;
@@ -166,7 +196,7 @@ html * {
         object-fit: cover;
       }
       .exp {
-        margin: 2.1rem 3.2rem 0rem 3.4rem;
+        padding: 2.1rem 3.2rem 2.1rem 3.4rem;
         font-family: "Noto Sans JP", sans-serif;
         font-size: 1.3rem;
         font-weight: normal;
@@ -176,6 +206,9 @@ html * {
     }
   }
 }
+/* ---------------- */
+/* contact
+/* ---------------- */
 #contact {
   font-family: "Noto Sans JP", sans-serif;
   #contact-inner {
@@ -197,6 +230,7 @@ html * {
           width: 100%;
           height: 3rem;
           border: 0.1rem solid #141414;
+          padding: 5px 10px;
         }
         .big {
           height: 17.1rem;
@@ -219,6 +253,9 @@ html * {
     }
   }
 }
+/* ---------------- */
+/* footer
+/* ---------------- */
 footer {
   padding-top: 2.4rem;
   background-color: #1b1310;
@@ -233,116 +270,97 @@ footer {
   }
 }
 
-/*
-@media (max-width: 1235px) {
+@media (max-width: 768px) {
   .inner {
-    width: 92%;
+    padding: 0 40px;
   }
-  .subtitle {
-    margin-top: 7rem;
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  .explanation {
-    margin-top: 3rem;
-    width: 100%;
-  }
+  /* ---------------- */
+  /* header
+  /* ---------------- */
   #header {
-    padding-top: 2rem;
     #header-inner {
-      #header-title {
-        font-size: 2.6rem;
-        letter-spacing: 0em;
-        line-height: 1.307692;
-      }
-      width: 92%;
+      align-items: center;
       #navi {
         display: none;
       }
     }
     #hamburger-button {
-      display: block;
-      font-size: 3rem;
-      font-weight: 500;
       color: #ffffff;
+      display: block;
     }
     #hamburger-menu {
-      width: 92%;
-      height: 66.7rem;
-      margin: 15rem auto 0rem;
+      width: 83.3333333%;
+      margin: 0 auto;
+      text-align: left;
       display: block;
-      font-size: 1.6rem;
-      letter-spacing: 0.05em;
-      line-height: 1.875;
-      text-align: center;
       #hamburger-navi-menu {
-        width: 6.4rem;
-        margin: 0 auto;
         list-style: none;
         li {
-          margin-bottom: 4.3rem;
+          line-height: 30px;
         }
       }
     }
   }
+  /* ---------------- */
+  /* fv
+  /* ---------------- */
   #fv {
     padding-top: 32rem;
-    height: 66.5rem;
     div {
-      width: 30rem;
-      height: 10rem;
+      max-width: 30rem;
       #fv-title {
-        margin-top: 3.7rem;
-        font-size: 3rem;
-        line-height: 0.8;
+        br {
+          display: block;
+        }
       }
     }
   }
-  #about {
-    #about-inner {
-      margin-top: 11.5rem;
-    }
-    #about-exp {
-      margin-top: 2rem;
-    }
-  }
+  /* ---------------- */
+  /* service
+  /* ---------------- */
   #service {
-    #service-inner {
-      margin-top: 16.5rem;
-    }
     #service-list {
       li {
         display: block;
-        .explanation {
-          margin-top: 1.5rem;
+        .text {
           width: 100%;
         }
-        img {
-          margin-top: 3.5rem;
+        figure {
           width: 100%;
-          height: 15rem;
+          margin-top: 1.5rem;
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        &:first-child {
+          .subtitle {
+            text-align: right;
+          }
         }
       }
     }
   }
+  /* ---------------- */
+  /* news
+  /* ---------------- */
   #news {
+    #news-inner {
+      margin-top: 16rem;
+    }
     #news-list {
+      margin-top: 8rem;
       display: block;
       li {
-        margin: 0rem auto 5rem;
-      }
-    }
-  }
-  #contact {
-    #contact-inner {
-      width: 92%;
-      margin: 15rem auto 0rem;
-      #contact-list li {
-        .contact-list-box {
+        width: 100%;
+        margin-bottom: 4.7rem;
+        //height: 32.3rem;
+        img {
           width: 100%;
+          height: 29.5rem;
+          object-fit: cover;
         }
       }
     }
   }
 }
-*/

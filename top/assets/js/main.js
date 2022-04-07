@@ -64,7 +64,7 @@ window.onload = function(){
         return;
       }
       else{
-        alert('入力チェックOK');
+        //alert('入力チェックOK');
       }
       
   });
