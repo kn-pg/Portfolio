@@ -34,6 +34,7 @@ body {
   font-weight: bold;
   letter-spacing: 2.125;
   line-height: 1.194;
+  color: #333333;
 }
 .sec-button {
   width: 160px;
@@ -60,9 +61,40 @@ body {
     display: flex;
     justify-content: space-between;
     #hamburger-button {
+      z-index: 2;
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+  }
+  #hamburger-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(34, 34, 34, 0.6);
+    #hamburger-navi-menu {
+      background: rgba(34, 34, 34, 0.95);
+      max-width: 520px;
+      margin-left: auto;
+      list-style: none;
+      padding: 180px 0px 0px;
+      height: 100vh;
+      text-align: center;
+      img {
+        width: 42.15px;
+        height: 45px;
+        margin-bottom: 40px;
+      }
+      li {
+        margin-bottom: 30px;
+        a {
+          font-size: 2rem;
+          font-weight: bold;
+          letter-spacing: 0.068em;
+          color: #ffffff;
+        }
+      }
     }
   }
 }
@@ -88,8 +120,10 @@ body {
       font-size: 2rem;
       font-weight: bold;
       line-height: 0.85;
+      margin-bottom: 10px;
     }
     .sec-title {
+      color: #fff;
       font-size: 7.2rem;
       font-weight: bold;
       line-height: 1.194;
@@ -139,6 +173,9 @@ body {
         margin-bottom: 27px;
       }
       .img-exp {
+        font-size: 1.6rem;
+        font-weight: normal;
+        letter-spacing: 0em;
         margin-bottom: 28px;
       }
     }
@@ -217,7 +254,204 @@ footer.container {
   .inner {
     #copyright {
       text-align: center;
+      font-size: 1rem;
+      font-weight: normal;
+      letter-spacing: 0.015em;
+      line-height: 3.2;
       color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  /* ---------------- */
+  /* header
+  /* ---------------- */
+  #header {
+    padding: 33.8px 30px;
+  }
+  /* ---------------- */
+  /* fv
+  /* ---------------- */
+  #fv {
+    padding: 0px 0px 134px;
+    height: 1024px;
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 26.8229%, #222222 26.8229%, #222222 100%);
+    img {
+      width: 78.125%;
+      height: 890px;
+    }
+    #fv-text {
+      top: 32.226%;
+      right: 10.416%;
+      .sec-subtitle {
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+      .sec-title {
+        font-size: 5.6rem;
+        font-weight: bold;
+        line-height: 0.9464;
+      }
+    }
+  }
+  /* ---------------- */
+  /* about us
+  /* ---------------- */
+  #about {
+    margin-top: 80px;
+    .inner {
+      padding: 60px 89px;
+    }
+    .box {
+      max-width: 590px;
+      margin: 0 auto;
+      padding: 40px 30px;
+    }
+  }
+  /* ---------------- */
+  /* works & culture
+  /* ---------------- */
+  #worksculture-overlay {
+    padding: 60px 30px;
+    #worksculture-innerlay {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: block;
+      #culture {
+        margin-left: 0px;
+        margin-top: 80px;
+      }
+    }
+  }
+  /* ---------------- */
+  /* topics
+  /* ---------------- */
+  #topics {
+    padding: 40px 30px;
+    .inner {
+      #topics-list {
+        width: 63.6363%;
+        margin-left: 0px;
+      }
+      .sec-button {
+        display: block;
+        margin-left: 0px;
+      }
+    }
+  }
+  /* ---------------- */
+  /* contact
+  /* ---------------- */
+  #contact {
+    background-color: #f0f0f0;
+    padding: 40px 30px 80px;
+    .inner {
+      display: block;
+      img {
+        width: 520px;
+        height: 350px;
+        margin-left: 0px;
+      }
+      .contact-inner-box {
+        margin-top: 30px;
+        .contact-text {
+          max-width: 510px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 599px) {
+  .container{
+    padding: 0;
+  }
+  /* ---------------- */
+  /* header
+  /* ---------------- */
+  #header {
+    padding: 19.8px 15px;
+  }
+  /* ---------------- */
+  /* fv
+  /* ---------------- */
+  #fv {
+    padding: 0px 0px 87px;
+    height: 667px;
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 24.5353%, #222222 24.5353%, #222222 100%);
+    img {
+      width: 76.53%;
+      height: 580px;
+    }
+    #fv-text {
+      top: 26.236%;
+      right: 5.3333%;
+    }
+  }
+  /* ---------------- */
+  /* about us
+  /* ---------------- */
+  #about {
+    margin-top: 78px;
+    .inner {
+      padding: 50px 15px;
+    }
+    .box {
+      margin: 0 auto;
+      padding: 50px 30px;
+      .box-text {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  /* ---------------- */
+  /* works & culture
+  /* ---------------- */
+  #worksculture-overlay {
+    padding: 40px 15px;
+    #worksculture-innerlay {
+      #works,
+      #culture {
+        width: 100%;
+      }
+      #culture {
+        margin-left: 0px;
+        margin-top: 40px;
+      }
+    }
+  }
+  /* ---------------- */
+  /* topics
+  /* ---------------- */
+  #topics {
+    padding: 40px 15px;
+    .inner {
+      #topics-list {
+        width: 100%;
+        margin-left: 0px;
+        li{
+          #topics .inner #topics-list li .topics-list-date {
+            font-size: 0.8rem;
+          }
+          .topics-list-index{
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  /* ---------------- */
+  /* contact
+  /* ---------------- */
+  #contact {
+    background-color: #f0f0f0;
+    padding: 40px 15px 40px;
+    .inner {
+      display: block;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
