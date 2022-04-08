@@ -21,6 +21,7 @@ body {
 /* ---------------- */
 .container {
   width: 100%;
+  padding: 60px 0px;
 }
 
 .inner {
@@ -50,7 +51,7 @@ body {
 /* header
 /* ---------------- */
 #header {
-  width: 100%;
+  padding: 30px 58px;
   position: fixed;
   top: 0;
   left: 0;
@@ -60,7 +61,7 @@ body {
 }
 
 #header .inner {
-  padding: 30px 58px;
+  max-width: 1324px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,23 +86,25 @@ body {
 /* fv
 /* ---------------- */
 #fv {
+  padding: 0px 0px 100px;
   height: 740px;
-  position: relative;
-  background-color: #222222;
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(45.83%, #ffffff), color-stop(45.83%, #222222), to(#222222));
+  background: linear-gradient(90deg, #ffffff 0%, #ffffff 45.83%, #222222 45.83%, #222222 100%);
   color: #fff;
+  position: relative;
 }
 
-#fv #fv-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1100px;
+#fv img {
+  width: 76.38%;
+  height: 640px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #fv #fv-text {
   position: absolute;
-  top: 157px;
-  left: 954px;
+  top: 21.216%;
+  right: 13.472%;
 }
 
 #fv #fv-text .sec-subtitle {
@@ -119,6 +122,10 @@ body {
 /* ---------------- */
 /* about us
 /* ---------------- */
+#about {
+  margin-top: 60px;
+}
+
 #about .inner {
   padding: 110px 50px;
   background: url("../img/about-img.png") no-repeat center 0;
@@ -126,7 +133,7 @@ body {
 }
 
 #about .box {
-  width: 590px;
+  max-width: 590px;
   padding: 50px 30px;
   background-color: rgba(255, 255, 255, 0.95);
 }
@@ -146,11 +153,12 @@ body {
 /* works & culture
 /* ---------------- */
 #worksculture-overlay {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
+  padding: 60px 50px;
 }
 
 #worksculture-overlay #worksculture-innerlay {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,15 +183,98 @@ body {
   margin-bottom: 28px;
 }
 
+#worksculture-overlay #worksculture-innerlay #culture {
+  margin-left: 60px;
+}
+
 /* ---------------- */
 /* topics
 /* ---------------- */
+#topics {
+  padding: 60px 50px;
+}
+
 #topics .inner {
   text-align: left;
 }
 
-#topics #topics-list {
+#topics .inner #topics-list {
+  width: 63.6363%;
+  margin-left: auto;
   list-style: none;
-  width: 700px;
+  margin-bottom: 30px;
+}
+
+#topics .inner #topics-list li {
+  border-bottom: 1px solid #dddddd;
+}
+
+#topics .inner #topics-list li .topics-list-date {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.015em;
+  line-height: 3.2;
+}
+
+#topics .inner #topics-list li .topics-list-index {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.001em;
+  padding-bottom: 10px;
+}
+
+#topics .inner .sec-button {
+  display: block;
+  margin-left: auto;
+}
+
+/* ---------------- */
+/* contact
+/* ---------------- */
+#contact {
+  background-color: #f0f0f0;
+  padding: 60px 50px 120px;
+}
+
+#contact .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: left;
+}
+
+#contact .inner img {
+  width: 580px;
+  height: 390px;
+  margin-left: 80px;
+}
+
+#contact .inner .contact-text {
+  max-width: 440px;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0em;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+/* ---------------- */
+/* footer
+/* ---------------- */
+footer.container {
+  background-color: #525252;
+  padding: 18px 0px;
+}
+
+footer.container .inner #copyright {
+  text-align: center;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

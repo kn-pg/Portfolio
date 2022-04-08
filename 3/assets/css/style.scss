@@ -22,6 +22,7 @@ body {
 /* ---------------- */
 .container {
   width: 100%;
+  padding: 60px 0px;
 }
 .inner {
   max-width: 1100px;
@@ -47,7 +48,7 @@ body {
 /* header
 /* ---------------- */
 #header {
-  width: 100%;
+  padding: 30px 58px;
   position: fixed;
   top: 0;
   left: 0;
@@ -55,7 +56,7 @@ body {
   z-index: 4;
   color: #fff;
   .inner {
-    padding: 30px 58px;
+    max-width: 1324px;
     display: flex;
     justify-content: space-between;
     #hamburger-button {
@@ -69,20 +70,20 @@ body {
 /* fv
 /* ---------------- */
 #fv {
+  padding: 0px 0px 100px;
   height: 740px;
-  position: relative;
-  background-color: #222222;
+  background: linear-gradient(90deg, #ffffff 0%, #ffffff 45.83%, #222222 45.83%, #222222 100%);
   color: #fff;
-  #fv-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1100px;
+  position: relative;
+  img {
+    width: 76.38%;
+    height: 640px;
+    object-fit: cover;
   }
   #fv-text {
     position: absolute;
-    top: 157px;
-    left: 954px;
+    top: 21.216%;
+    right: 13.472%;
     .sec-subtitle {
       font-size: 2rem;
       font-weight: bold;
@@ -99,14 +100,14 @@ body {
 /* about us
 /* ---------------- */
 #about {
+  margin-top: 60px;
   .inner {
     padding: 110px 50px;
     background: url("../img/about-img.png") no-repeat center 0;
     background-size: cover;
   }
   .box {
-    width: 590px;
-
+    max-width: 590px;
     padding: 50px 30px;
     background-color: rgba(255, 255, 255, 0.95);
     .sec-title {
@@ -124,33 +125,99 @@ body {
 /* works & culture
 /* ---------------- */
 #worksculture-overlay {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
+  padding: 60px 50px;
   #worksculture-innerlay {
-    width: 1100px;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     #works,
     #culture {
       width: 520px;
-      img{
+      img {
         margin-bottom: 27px;
       }
-      .img-exp{
+      .img-exp {
         margin-bottom: 28px;
       }
+    }
+    #culture {
+      margin-left: 60px;
     }
   }
 }
 /* ---------------- */
 /* topics
 /* ---------------- */
-#topics{
-  .inner{
+#topics {
+  padding: 60px 50px;
+  .inner {
     text-align: left;
+    #topics-list {
+      width: 63.6363%;
+      margin-left: auto;
+      list-style: none;
+      margin-bottom: 30px;
+      li {
+        border-bottom: 1px solid #dddddd;
+        .topics-list-date {
+          font-size: 1rem;
+          font-weight: bold;
+          letter-spacing: 0.015em;
+          line-height: 3.2;
+        }
+        .topics-list-index {
+          font-size: 1.4rem;
+          font-weight: bold;
+          letter-spacing: 0.001em;
+          padding-bottom: 10px;
+        }
+      }
+    }
+    .sec-button {
+      display: block;
+      margin-left: auto;
+    }
   }
-  #topics-list{
-    list-style: none;
-    width: 700px;
+}
+/* ---------------- */
+/* contact
+/* ---------------- */
+#contact {
+  background-color: #f0f0f0;
+  padding: 60px 50px 120px;
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    text-align: left;
+
+    img {
+      width: 580px;
+      height: 390px;
+      margin-left: 80px;
+    }
+    .contact-text {
+      max-width: 440px;
+      font-size: 1.6rem;
+      font-weight: normal;
+      letter-spacing: 0em;
+      line-height: 2;
+      margin-bottom: 30px;
+    }
+  }
+}
+/* ---------------- */
+/* footer
+/* ---------------- */
+footer.container {
+  background-color: #525252;
+  padding: 18px 0px;
+  .inner {
+    #copyright {
+      text-align: center;
+      color: #ffffff;
+    }
   }
 }

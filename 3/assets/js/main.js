@@ -7,5 +7,5 @@ $('#hamburger-button').click(function () {
   $(this).toggleClass('selected');
   var content = $(this).parents().find('#hamburger-menu');
   content.slideToggle();
-  $('.hamburger-bars, #hamburger-button-hide').toggle();
+  $('.hamburger-bars, .hamburger-button-icon').toggle();
 });

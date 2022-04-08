@@ -21,8 +21,8 @@
       <div id="header-inner" class="inner">
         <h1 id="header-title"><a href="index.html"><img src="./assets/img/site-logo.png" alt=""></a></h1>
         <div id="hamburger-button">
-          <img id="hamburger-button-open" src="./assets/img/btn_trigger_open.png" alt="">
-          <img id="hamburger-button-hide" src="./assets/img/btn_trigger_hide.png" alt="">
+          <img id="hamburger-button-open" class="hamburger-button-icon" src="./assets/img/btn_trigger_open.png" alt="">
+          <img id="hamburger-button-hide" class="hamburger-button-icon" src="./assets/img/btn_trigger_hide.png" alt="">
           <div id="hamburger-name">MENU</div>
         </div>
       </div>
@@ -37,10 +37,9 @@
         </ul>
       </div>
     </header>
-
     <main>
       <section id="fv" class="container">
-        <div id="fv-img"><img src="./assets/img/fv-img.png" alt=""></div>
+        <img src="./assets/img/fv-img.png" alt="">
         <div id="fv-text">
           <h3 class="sec-subtitle">デザインで人を笑顔にする会社<br>DIGSMILE INC.</h3>
           <h2 class="sec-title">DESIGN<br>FOR<br>SMILE.</h2>
@@ -102,20 +101,28 @@
             MORE</button>
         </div>
       </section>
-      <section id="contact" class="inner">
-        <h2 class="sec-title">CULTURE</h2>
-          <img src="./assets/img/culture-img.png" alt="">
-          <div class="img-exp">DIGSMILEの社内文化について紹介します。</div>
-          <button type="button" onclick="location.href='https://techacademy.jp'" class="sec-button">READ
-            MORE</button>
+      <section id="contact" class="container">
+        <div class="inner">
+          <img src="./assets/img/recruit-img.png" alt="">
+          <div class="contact-inner-box">
+            <h2 class="sec-title">CONTACT</h2>
+            <div class="contact-text">
+              制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br>
+              まずはお気軽にご連絡ください。担当者から改めて返信いたします。
+            </div>
+            <button type="button" onclick="location.href='https://techacademy.jp'" class="sec-button">READ
+              MORE</button>
+          </div>
+        </div>
+
       </section>
-      <!---->
+
       <footer class="container">
         <div class="inner">
-          <h4 id="copyright">&copy;crest.design all rights reserved</h4>
+          <div id="copyright">&copy;2018 DIGSMILE INC.</div>
         </div>
       </footer>
-      <!---->
+
     </main>
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/jquery-migrate-3.3.2.min.js"></script>
