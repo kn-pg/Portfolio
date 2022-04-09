@@ -30,19 +30,20 @@
         <ul id="hamburger-navi-menu">
           <li class="in-page"><a href=""><img src="./assets/img/inmenu-logo.png" alt=""></a></li>
           <li class="in-page"><a href="./about.html">ABOUT US</a></li>
-          <li class="in-page"><a href="./index.html">WORKS</a></li>
-          <li class="in-page"><a href="./index.html">CULTURE</a></li>
-          <li class="in-page"><a href="./index.html">TOPICS</a></li>
+          <li class="in-page"><a href="./index.html">WORKS(no-link)</a></li>
+          <li class="in-page"><a href="./index.html">CULTURE(no-link)</a></li>
+          <li class="in-page"><a href="./index.html">TOPICS(no-link)</a></li>
           <li class="in-page"><a href="./contact.html">CONTACT</a></li>
         </ul>
       </div>
     </header>
     <main>
       <section id="fv" class="container">
-        <img src="./assets/img/contact-fv-img.png" alt="">
-        <div id="fv-text">
-          <h2 class="sec-title">CONTACT</h2>
-          <h3 class="sec-subtitle">お問い合わせ</h3>
+        <div class="fv-img">
+          <div id="fv-text">
+            <h2 class="sec-title">CONTACT</h2>
+            <h3 class="sec-subtitle">お問い合わせ</h3>
+          </div>
         </div>
       </section>
       <section id="form" class="container">
@@ -55,23 +56,26 @@
               <li>
                 <div class="list-title">お問い合わせ種別<div class="list-required">必須</div>
                 </div>
-                <label for="inquirytype1" class="inquirytype-text">
-                  <input type="radio" name="inquirytype" id="inquirytype1" class="inquirytype" value="制作依頼" required checked>
-                  制作依頼
-                </label>
-                <label for="inquirytype2" class="inquirytype-text">
-                  <input type="radio" name="inquirytype" id="inquirytype2" class="inquirytype" value="採用" required>
-                  採用
-                </label>
-                <label for="inquirytype3" class="inquirytype-text">
-                  <input type="radio" name="inquirytype" id="inquirytype3" class="inquirytype" value="IR" required>
-                  IR
-                </label>
-                
-                <label for="inquirytype4" class="inquirytype-text">
-                  <input type="radio" name="inquirytype" id="inquirytype4" class="inquirytype" value="その他" required>
-                  その他
-                </label>
+                <div class="inquirytype-list">
+                  <label for="inquirytype1" class="inquirytype-text">
+                    <input type="radio" name="inquirytype" id="inquirytype1" class="inquirytype" value="制作依頼" required
+                      checked>
+                    制作依頼
+                  </label>
+                  <label for="inquirytype2" class="inquirytype-text">
+                    <input type="radio" name="inquirytype" id="inquirytype2" class="inquirytype" value="採用" required>
+                    採用
+                  </label>
+                  <label for="inquirytype3" class="inquirytype-text">
+                    <input type="radio" name="inquirytype" id="inquirytype3" class="inquirytype" value="採用" required>
+                    IR
+                  </label>
+
+                  <label for="inquirytype4" class="inquirytype-text">
+                    <input type="radio" name="inquirytype" id="inquirytype4" class="inquirytype" value="その他" required>
+                    その他
+                  </label>
+                </div>
               </li>
               <li>
                 <div class="list-title">会社名</div>

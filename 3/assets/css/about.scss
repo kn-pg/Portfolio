@@ -9,6 +9,14 @@
 .sec-text p {
   margin-bottom: 16px;
 }
+#fv {
+  .fv-img {
+    width: 76.38%;
+    height: 83.4%;
+    background: url("../img/about-fv-img.png") no-repeat center;
+    background-size: cover;
+  }
+}
 
 /* ---------------- */
 /* vision
@@ -36,8 +44,7 @@
       position: absolute;
       top: -144px;
       left: 0;
-      width: 420px;
-      height: 282.45px;
+      max-width: 36.4%;
       object-fit: cover;
     }
     .box {
@@ -88,16 +95,13 @@
     }
   }
 }
-@media (max-width: 1110px) {
-  #ceomessage {
-    .inner {
-      .box {
-        padding-top: 140px 
-      }
+@media (max-width: 1024px) {
+  #fv {
+    .fv-img {
+      width: 76.4%;
+      height: 86%;
     }
   }
-}
-@media (max-width: 1024px) {
   /* ---------------- */
   /* vision
   /* ---------------- */
@@ -116,11 +120,11 @@
       img {
         top: -131px;
         left: 0;
-        width: 320px;
+        max-width: 320px;
         height: 216px;
       }
       .box {
-        max-width:494px;
+        max-width: 494px;
         padding: 109px 41px;
       }
     }
@@ -144,11 +148,17 @@
   }
 }
 @media (max-width: 599px) {
+  #fv {
+    .fv-img {
+      width: 76.5%;
+      height: 86.2%;
+    }
+  }
   /* ---------------- */
   /* visionmargin-left: 
   /* ---------------- */
   #vision.container {
-    padding:80px 0;
+    padding: 80px 0;
     .inner {
       max-width: 100%;
       margin: 0 15px;
@@ -164,7 +174,7 @@
         top: -129px;
         left: -15px;
         right: auto;
-        width: 340px;
+        max-width: 340px;
         height: 230px;
       }
       .box {

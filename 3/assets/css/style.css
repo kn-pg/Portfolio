@@ -84,6 +84,10 @@ body {
           align-items: center;
 }
 
+#header .inner #hamburger-button #hamburger-name {
+  margin-left: 7px;
+}
+
 #header #hamburger-menu {
   position: absolute;
   top: 0;
@@ -128,20 +132,22 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(45.83%, #ffffff), color-stop(45.83%, #222222), to(#222222));
   background: linear-gradient(90deg, #ffffff 0%, #ffffff 45.83%, #222222 45.83%, #222222 100%);
   color: #fff;
-  position: relative;
 }
 
-#fv img {
+#fv .fv-img {
   width: 76.38%;
-  height: 640px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 86.5%;
+  background: url("../img/fv-img.png") no-repeat center;
+  background-size: cover;
+  position: relative;
 }
 
 #fv #fv-text {
   position: absolute;
-  top: 21.216%;
-  right: 13.472%;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
 }
 
 #fv #fv-text .sec-subtitle {
@@ -163,6 +169,7 @@ body {
 /* ---------------- */
 #about {
   margin-top: 60px;
+  position: relative;
 }
 
 #about .inner {
@@ -188,12 +195,23 @@ body {
   line-height: 2;
 }
 
+#about::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  background-color: #f0f0f0;
+}
+
 /* ---------------- */
 /* works & culture
 /* ---------------- */
 #worksculture-overlay {
   background-color: #f0f0f0;
-  padding: 60px 50px;
+  padding: 20px 50px 60px;
 }
 
 #worksculture-overlay #worksculture-innerlay {
@@ -342,11 +360,7 @@ footer.container .inner #copyright {
   }
   #fv img {
     width: 78.125%;
-    height: 890px;
-  }
-  #fv #fv-text {
-    top: 32.226%;
-    right: 10.416%;
+    height: 75.52%;
   }
   #fv #fv-text .sec-subtitle {
     font-size: 1.6rem;
@@ -375,7 +389,7 @@ footer.container .inner #copyright {
   /* works & culture
   /* ---------------- */
   #worksculture-overlay {
-    padding: 60px 30px;
+    padding: 0px 30px 60px;
   }
   #worksculture-overlay #worksculture-innerlay {
     max-width: 1100px;
@@ -442,13 +456,13 @@ footer.container .inner #copyright {
     background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(24.5353%, #ffffff), color-stop(24.5353%, #222222), to(#222222));
     background: linear-gradient(90deg, #ffffff 0%, #ffffff 24.5353%, #222222 24.5353%, #222222 100%);
   }
-  #fv img {
+  #fv .fv-img {
     width: 76.53%;
-    height: 580px;
+    height: 75.52%;
   }
   #fv #fv-text {
-    top: 26.236%;
-    right: 5.3333%;
+    -webkit-transform: translate(14%, -35%);
+            transform: translate(14%, -35%);
   }
   /* ---------------- */
   /* about us

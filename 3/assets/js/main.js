@@ -7,7 +7,7 @@ $('#hamburger-button').click(function () {
   $(this).toggleClass('selected');
   var content = $(this).parents().find('#hamburger-menu');
   content.slideToggle();
-  $('.hamburger-bars, .hamburger-button-icon .tg-color').toggle();
+  $('.hamburger-bars, #hamburger-button-open, #hamburger-button-hide, .tg-color').toggle();
 });
 //off-page link
 $('.off-page').click(function () {

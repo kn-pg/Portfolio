@@ -1,8 +1,24 @@
+input, textarea {
+  resize: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  --webkit-appearnce:none;
+  outline: none;
+}
+
 .sec-text {
   font-size: 1.6rem;
   font-weight: normal;
   letter-spacing: 0.004em;
   line-height: 1.5;
+}
+
+#fv .fv-img {
+  width: 76.38%;
+  height: 85.8%;
+  background: url("../img/contact-fv-img.png") no-repeat center;
+  background-size: cover;
 }
 
 #form .inner {
@@ -37,15 +53,35 @@
   display: inline-block;
 }
 
+#form .inner #contact-list li .inquirytype-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #form .inner #contact-list li .inquirytype {
   width: 20px;
   height: 20px;
+  border: 1px solid #333333;
+  border-radius: 50%;
+  vertical-align: -4px;
   margin: 0 0;
+}
+
+#form .inner #contact-list li .inquirytype:checked {
+  background-color: #333333;
+  border: 4px solid #ffffff;
+  -webkit-box-shadow: 0 0 0 1px #333333;
+          box-shadow: 0 0 0 1px #333333;
 }
 
 #form .inner #contact-list li .inquirytype-text {
   padding-left: 5px;
   font-size: 1.6rem;
+  font-family: "Noto Sans JP";
   font-weight: normal;
   letter-spacing: 0.004em;
   margin-right: 50px;
@@ -82,8 +118,16 @@
 }
 
 #form .inner #contact-list li .agreement-check {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #333333;
+}
+
+#form .inner #contact-list li .agreement-check:checked {
+  background-image: url("../img/check_24.svg");
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #form .inner #contact-list li .agreement-text {
@@ -99,8 +143,12 @@
 }
 
 @media (max-width: 1024px) {
+  #fv .fv-img {
+    width: 75.26%;
+    height: 86.0%;
+  }
   #form.container {
-    padding: 135px 0px 197px;
+    padding: 135px 30px 197px;
   }
   #form .inner .sec-text {
     margin-bottom: 10px;
@@ -127,6 +175,10 @@
 }
 
 @media (max-width: 599px) {
+  #fv .fv-img {
+    width: 76.53%;
+    height: 73.97%;
+  }
   #form.container {
     padding: 80px 15px;
   }
@@ -138,6 +190,9 @@
   }
   #form .inner #contact-list li .list-title {
     margin-bottom: 8px;
+  }
+  #form .inner #contact-list li .inquirytype-list {
+    display: block;
   }
   #form .inner #contact-list li .inquirytype-text {
     display: block;
