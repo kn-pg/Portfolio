@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--basic認証-->
+    <meta name="robots" content="noindex , nofollow">
+    <title>cresta_coding_practice03_contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+JP&display=swap"
+      rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c355afeef2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/ress/ress.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+  </head>
+
+  <body>
+    <header id="header" class="container">
+      <div id="header-inner" class="inner">
+        <h1 id="header-title"><a href="index.html"><img src="./assets/img/site-logo.png" alt=""></a></h1>
+        <div id="hamburger-button">
+          <img id="hamburger-button-open" class="hamburger-button-icon" src="./assets/img/btn_trigger_open.png" alt="">
+          <img id="hamburger-button-hide" class="hamburger-button-icon" src="./assets/img/btn_trigger_hide.png" alt="">
+          <div id="hamburger-name">MENU</div>
+        </div>
+      </div>
+      <div id="hamburger-menu">
+        <ul id="hamburger-navi-menu">
+          <li class="in-page"><a href=""><img src="./assets/img/inmenu-logo.png" alt=""></a></li>
+          <li class="in-page"><a href="./about.html">ABOUT US</a></li>
+          <li class="in-page"><a href="./index.html">WORKS</a></li>
+          <li class="in-page"><a href="./index.html">CULTURE</a></li>
+          <li class="in-page"><a href="./index.html">TOPICS</a></li>
+          <li class="in-page"><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section id="fv" class="container">
+        <img src="./assets/img/contact-fv-img.png" alt="">
+        <div id="fv-text">
+          <h2 class="sec-title">CONTACT</h2>
+          <h3 class="sec-subtitle">お問い合わせ</h3>
+        </div>
+      </section>
+      <section id="form" class="container">
+        <div class="inner">
+          <div class="sec-text">ご依頼やご相談についてのご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。送付いただいた内容を確認の上、担当者からご連絡させていただきます。
+          </div>
+          <form method="POST">
+            <!--action="./thanks.html" data-netlify-recaptcha="true" data-netlify="true"-->
+            <ul id="contact-list">
+              <li>
+                <div class="list-title">お問い合わせ種別<div class="list-required">必須</div>
+                </div>
+                <label for="inquirytype1" class="inquirytype-text">
+                  <input type="radio" name="inquirytype" id="inquirytype1" class="inquirytype" value="制作依頼" required checked>
+                  制作依頼
+                </label>
+                <label for="inquirytype2" class="inquirytype-text">
+                  <input type="radio" name="inquirytype" id="inquirytype2" class="inquirytype" value="採用" required>
+                  採用
+                </label>
+                <label for="inquirytype3" class="inquirytype-text">
+                  <input type="radio" name="inquirytype" id="inquirytype3" class="inquirytype" value="IR" required>
+                  IR
+                </label>
+                
+                <label for="inquirytype4" class="inquirytype-text">
+                  <input type="radio" name="inquirytype" id="inquirytype4" class="inquirytype" value="その他" required>
+                  その他
+                </label>
+              </li>
+              <li>
+                <div class="list-title">会社名</div>
+                <input type="text" name="companyname" id="companyname" class="contact-list-box">
+              </li>
+              <li>
+                <div class="list-title">お名前<div class="list-required">必須</div>
+                </div>
+                <input type="text" name="name" id="username" class="contact-list-box" required>
+              </li>
+              <li>
+                <div class="list-title">メールアドレス<div class="list-required">必須</div>
+                </div>
+                <input type="text" name="mail" id="mail" class="contact-list-box" required>
+              </li>
+              <li>
+                <div class="list-title">お問い合わせ内容<div class="list-required">必須</div>
+                </div>
+                <textarea rows="10" name="messages" id="messages" class="contact-list-box big" required></textarea>
+              </li>
+              <li>
+                <div class="list-title">PRIVACY POLICY</div>
+                <div class="contact-list-box pp-text">
+                  個人情報保護方針<br>
+                  株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。<br>
+                  <br>
+                  1.個人情報の収集、利用<br>
+                  当社では、お客様との取引、サービスの提供のために個人情報を適法に収集し、収集した目的の範囲内で、個人情報を利用いたします。<br>
+                  <br>
+                  2.個人情報の第三者への開示と提供<br>
+                  収集したお客様の個人情報は、法的な要請等によらない限り、お客様の承諾を得ない第三者に対して提供・開示はいたしません。<br>
+                  業務の都合上、業務委託先に個人情報を提供する場合は、機密保持契約等によって業務委託先に個人情報保護を義務付けるとともに、業務委託先が適切に個人情報を取り扱うように管理いたします。<br>
+                  <br>
+                  3.個人情報の保護<br>
+                  当社では、個人情報の紛失、破壊、改ざん、不正アクセス、および漏えい等を防止するため、適切な対策を行います。<br>
+                  <br>
+                  4.法令および関連規範の遵守<br>
+                  当社は、個人情報の取り扱いに関して、個人情報保護法をはじめとする個人情報に関する法令および関連する規範を遵守します。<br>
+                  <br>
+                  5.個人情報の開示・訂正・削除<br>
+                  当社では、個人情報の開示・訂正・削除等の依頼があった場合、情報提供者本人であることを確認の上、すみやかに対応いたします。<br>
+                  <br>
+                  法令や当社方針により、プライバシー・ポリシーを予告なく改訂することがあります。<br>
+                  <br>
+                  お問い合わせ窓口<br>
+                  当社の個人情報の取扱いに関するお問い合わせは下記までご連絡お願いいたします。<br>
+                  株式会社ファイアープレイス<br>
+                  044-589-4333<br>
+                  <br>
+                  <br>
+                </div>
+              </li>
+              <li>
+                <input type="checkbox" name="agreement" id="agreement" class="agreement-check" required>
+                <label for="agreement" class="agreement-text">個人情報の取り扱いについて同意のうえ送信します。</label>
+              </li>
+            </ul>
+            <div class="recaptcha-item">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+            <div id="contact-submit-box" class="sec-button">
+              <input id="contact-submit" type="submit" name="cs" value="送信">
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="container">
+        <div class="inner">
+          <div id="copyright">&copy;2018 DIGSMILE INC.</div>
+        </div>
+      </footer>
+    </main>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/jquery-migrate-3.3.2.min.js"></script>
+    <script src="./assets/js/fitie.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/contact.js"></script>
+  </body>
+
+</html>

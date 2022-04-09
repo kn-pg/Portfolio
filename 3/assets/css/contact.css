@@ -1,0 +1,150 @@
+.sec-text {
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.004em;
+  line-height: 1.5;
+}
+
+#form .inner {
+  max-width: 700px;
+}
+
+#form .inner .sec-text {
+  margin-bottom: 50px;
+}
+
+#form .inner #contact-list li {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+#form .inner #contact-list li .list-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.004em;
+  margin-bottom: 10px;
+}
+
+#form .inner #contact-list li .list-required {
+  margin: auto 8px;
+  padding: 0 5px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.004em;
+  line-height: 18px;
+  display: inline-block;
+}
+
+#form .inner #contact-list li .inquirytype {
+  width: 20px;
+  height: 20px;
+  margin: 0 0;
+}
+
+#form .inner #contact-list li .inquirytype-text {
+  padding-left: 5px;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.004em;
+  margin-right: 50px;
+  height: 20px;
+}
+
+#form .inner #contact-list li .contact-list-box {
+  padding: 0 5px;
+  width: 100%;
+  border: 1px solid #333333;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.004em;
+  line-height: 1.5;
+}
+
+#form .inner #contact-list li .big {
+  height: 212px;
+}
+
+#form .inner #contact-list li .pp-text {
+  height: 252px;
+  overflow-y: scroll;
+}
+
+#form .inner #contact-list li:last-child {
+  text-align: center;
+}
+
+#form .inner #contact-list li .agreement-check,
+#form .inner #contact-list li .agreement-text {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#form .inner #contact-list li .agreement-check {
+  width: 20px;
+  height: 20px;
+}
+
+#form .inner #contact-list li .agreement-text {
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.004em;
+  margin-left: 10px;
+}
+
+#form .inner .sec-button {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  #form.container {
+    padding: 135px 0px 197px;
+  }
+  #form .inner .sec-text {
+    margin-bottom: 10px;
+  }
+  #form .inner #contact-list li {
+    margin-bottom: 35px;
+  }
+  #form .inner #contact-list li .list-title {
+    margin-bottom: 7px;
+  }
+  #form .inner #contact-list li .list-required {
+    margin: auto 10px;
+    font-weight: normal;
+  }
+  #form .inner #contact-list li .big {
+    height: 180px;
+  }
+  #form .inner #contact-list li .pp-text {
+    height: 226px;
+  }
+  #form .inner #contact-list li:last-child {
+    text-align: left;
+  }
+}
+
+@media (max-width: 599px) {
+  #form.container {
+    padding: 80px 15px;
+  }
+  #form .inner .sec-text {
+    margin-bottom: 70px;
+  }
+  #form .inner #contact-list li {
+    margin-bottom: 37px;
+  }
+  #form .inner #contact-list li .list-title {
+    margin-bottom: 8px;
+  }
+  #form .inner #contact-list li .inquirytype-text {
+    display: block;
+    margin-bottom: 14px;
+  }
+  #form .inner #contact-list li .big {
+    height: 210px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
