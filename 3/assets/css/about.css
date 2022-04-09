@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .sec-text {
   font-size: 1.6rem;
   font-weight: bold;
@@ -100,11 +101,11 @@
 
 #company #google-map {
   margin-top: 40px;
-}
-
-#company #google-map img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  /*商用利用ではないが、念のため非表示
+    img {
+      object-fit: cover;
+    }
+    */
 }
 
 @media (max-width: 1024px) {

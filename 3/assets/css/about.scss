@@ -90,9 +90,11 @@
   }
   #google-map {
     margin-top: 40px;
+    /*商用利用ではないが、念のため非表示
     img {
       object-fit: cover;
     }
+    */
   }
 }
 @media (max-width: 1024px) {
