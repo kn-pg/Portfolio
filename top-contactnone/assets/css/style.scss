@@ -326,7 +326,7 @@ footer {
         max-width: 450px;
         margin: 0px auto;
         .title {
-          text-align: center;
+          text-align: left;
         }
       }
     }
@@ -341,9 +341,12 @@ footer {
         width: 100%;
         margin: 0 auto;
         .list-text {
-          max-width: 450px;
+          max-width: 750px;
           margin-bottom: 40px;
-          text-align: left;
+          text-align: center;
+          p{
+            text-align: left;
+          }
         }
       }
     }
@@ -360,7 +363,7 @@ footer {
           margin: 0 auto;
           margin-bottom: 55px;
           .list-text {
-            max-width: 400px;
+            max-width: 750px;
             margin: 20px auto;
             text-align: left;
           }

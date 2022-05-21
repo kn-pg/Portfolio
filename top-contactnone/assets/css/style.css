@@ -379,7 +379,7 @@ footer {
     margin: 0px auto;
   }
   #about .inner #about-text .title {
-    text-align: center;
+    text-align: left;
   }
   /* ---------------- */
   /* skills
@@ -392,8 +392,11 @@ footer {
     margin: 0 auto;
   }
   #skills #skills-list li .list-text {
-    max-width: 450px;
+    max-width: 750px;
     margin-bottom: 40px;
+    text-align: center;
+  }
+  #skills #skills-list li .list-text p {
     text-align: left;
   }
   /* ---------------- */
@@ -408,7 +411,7 @@ footer {
     margin-bottom: 55px;
   }
   #works .inner #works-list li .list-text {
-    max-width: 400px;
+    max-width: 750px;
     margin: 20px auto;
     text-align: left;
   }
