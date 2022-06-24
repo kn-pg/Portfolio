@@ -271,6 +271,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .subtitle {
+    font-size: 2rem;
+  }
   .inner {
     padding: 0 40px;
   }
