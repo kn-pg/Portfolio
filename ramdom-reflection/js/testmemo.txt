@@ -1,0 +1,30 @@
+// output
+  // 最小値=1 最大値=全体の数とした乱数配列作成
+  // 重複チェック用配列
+  var randoms = [];
+  // 最小値と最大値
+  var min = 1, max = 20;
+  var outputRandomsNum = new Array(max);
+  // 重複チェックしながら乱数作成
+  for (var i = 0; i < max; i++) {
+    while (true) {
+      outputRandomsNum[i] = intRandom(min, max);
+      if (!randoms.includes(outputRandomsNum)) {
+        randoms.push(outputRandomsNum[i]);
+        break;
+      }
+    }
+  }
+  // min以上max以下の整数値の乱数を返す 
+  function intRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  var outputFinal = new Array(10);
+  for (var j = 0; j < 10; j++) {
+    outputFinal[j] = new Array(2);
+    for (var k = 0; k < 2; k++) {
+      var l=j*2+k;
+      outputFinal[j][k]=outputRandomsNum[l];
+    }
+  }
+      console.table(outputFinal);

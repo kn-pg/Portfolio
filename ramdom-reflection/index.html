@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ramdom-reflection</title>
+    <link rel="stylesheet" href="css/ress/ress.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__title">ランダムリフレクション<br>1日に行う番号出力プログラム</h1>
+      <h2 class="header__subtitle">ランダムリフレクションとは？</h2>
+      <p class="header__text">ランダムに問題だけを見て、反射的に答えや解法が思い浮かぶかを徹底的にこなしていく勉強法</p>
+    </header>
+
+    <section class="inputPart">
+      <form name="form">
+        <div class="wrapper">
+          <div class="inputPart__index container">
+            <h3 class="inputPart__title">全体の数</h3>
+            <span class="">以下の中から1つ選択して、数を入力してください。</span>
+            <label class="inputPart__index--radio">
+              <input type="radio" name="overall" value="番号" checked>
+              問題
+            </label>
+            <label class="inputPart__index--radio">
+              <input type="radio" name="overall" value="ページ">
+              ページ
+            </label>
+            <label class="inputPart__index--num">
+              数値
+              <input type="number" id="overallNum" min="1" value="1">
+            </label>
+          </div>
+          <div class="inputPart__index container">
+            <h3 class="inputPart__title">区切りの数</h3>
+            <span class="">以下の中から1つ選択して、数を入力してください。</span>
+            <label class="inputPart__index--radio">
+              <input type="radio" name="delimiters" value="日目" checked>
+              日数
+            </label>
+            <label class="inputPart__index--radio">
+              <input type="radio" name="delimiters" value="日目">
+              1日当たりの数
+            </label>
+            <label class="inputPart__index--num">
+              数値
+              <input type="number" id="delimitersNum" min="1" value="1">
+            </label>
+          </div>
+        </div>
+        <input type="button" id="output" value="出力">
+      </form>
+    </section>
+    <section class="outputPart">
+      <div class="outputPart__title">プレビュー</div>
+      <div id="table"></div>
+    </section>
+    <footer class="footer">
+      <div id="footer-text">&copy; 2022 / kn-portfolio-randomReflection / All rights reserved.</div>
+    </footer>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-migrate-3.3.2.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+
+</html>
